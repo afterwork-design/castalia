@@ -1,0 +1,29 @@
+{
+    "title": "MINICODE",
+    "description": "MINICODE是一个小程序发布平台，开源，共享。",
+    "additionalMetaTags": [
+        {
+            "property": "author",
+            "content": "王鹏飞"
+        },
+        {
+            "property": "keywords",
+            "content": "minicode,mini code,web development,javascript,typescript,graphics,CG,computer graphics"
+        }
+    ],
+    "twitter": {
+        "cardType": "summary_large_image",
+        "site": "http://www.pengfeixc.com",
+        "title": "王鹏飞的个人网站",
+        "description": "程序员，前端开发，计算机图形学爱好者。"
+    },
+    "openGraph": {
+        "type": "website",
+        "locale": "zh-CN",
+        "site_name": "王鹏飞",
+        "profile": {
+            "firstName": "Pengfei",
+            "lastName": "Wang"
+        }
+    }
+}
