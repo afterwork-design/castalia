@@ -1,0 +1,9 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    background-color: #f8f8f8
+}

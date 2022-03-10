@@ -22,6 +22,10 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@chakra-ui/react": "^1.8.6",
+        "@emotion/react": "^11.8.1",
+        "@emotion/styled": "^11.8.1",
+        "framer-motion": "^6.2.8",
         "mitt": "^3.0.0",
         "moment": "^2.29.1",
         "next": "11.1.2",
