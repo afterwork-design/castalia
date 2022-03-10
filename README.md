@@ -1,3 +1,3 @@
-# MINICODE
+# Castalia
 
-一个小程序平台，[https://pengfeiw.github.io/minicode/](https://pengfeiw.github.io/minicode/)。
+最全的设计导航资源网站。
