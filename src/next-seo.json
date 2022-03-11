@@ -1,29 +1,14 @@
 {
-    "title": "MINICODE",
-    "description": "MINICODE是一个小程序发布平台，开源，共享。",
+    "title": "Castalia",
+    "description": "Castaila 是一个资源导航网站，不只是设计师的灵感源泉，精选国内外优质网站，让每个人都能找到自己需要的网站",
     "additionalMetaTags": [
         {
             "property": "author",
-            "content": "王鹏飞"
+            "content": "Tang Weijuan"
         },
         {
             "property": "keywords",
-            "content": "minicode,mini code,web development,javascript,typescript,graphics,CG,computer graphics"
+            "content": "site navigation,网站导航,设计导航,castaila,design,design resource,blog,icon,illustrator"
         }
-    ],
-    "twitter": {
-        "cardType": "summary_large_image",
-        "site": "http://www.pengfeixc.com",
-        "title": "王鹏飞的个人网站",
-        "description": "程序员，前端开发，计算机图形学爱好者。"
-    },
-    "openGraph": {
-        "type": "website",
-        "locale": "zh-CN",
-        "site_name": "王鹏飞",
-        "profile": {
-            "firstName": "Pengfei",
-            "lastName": "Wang"
-        }
-    }
+    ]
 }
