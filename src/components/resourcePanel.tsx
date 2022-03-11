@@ -24,7 +24,7 @@ const ResourcePanel: React.FC<Props> = ({
             <Grid
                 rowGap="15px"
                 columnGap="15px"
-                gridTemplateColumns="repeat(5, 1fr)"
+                gridTemplateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)", "repeat(5, 1fr)"]}
             >
                 {
                     resource.site.map((site) => (<ResourceCard key={site.name} site={site} />))
