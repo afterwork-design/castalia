@@ -30,6 +30,10 @@ const MenuItem: React.FC<Props> = ({
             columnGap="10px"
             onClick={clickHandle}
             bgColor={active ? "#f1eeff" : "white"}
+            cursor="pointer"
+            _hover={{
+                bgColor: "#f1eeff55"
+            }}
         >
             <Image
                 src={resource.icon}
@@ -39,7 +43,7 @@ const MenuItem: React.FC<Props> = ({
             />
             <H2
                 fontWeight="normal"
-                fontSize="1.2rem"
+                fontSize="14px"
             >
                 <a ref={linkRef} href={`#${resource.name}`}>
                     {resource.name}

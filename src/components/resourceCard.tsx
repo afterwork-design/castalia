@@ -34,13 +34,13 @@ const ResourceCard: React.FC<Props> = ({
             onClick={clickHandle}
         >
             <Image
-                src="/avatar.svg"
+                src={site.image}
                 alt={site.name}
                 width="80px"
                 height="80px"
             />
             <Box>
-                <H3 fontSize={16}>
+                <H3 fontSize="16px">
                     <a
                         ref={linkRef}
                         href={site.url}
@@ -50,7 +50,7 @@ const ResourceCard: React.FC<Props> = ({
                         {site.name}
                     </a>
                 </H3>
-                <Text mt="15px" color="gray.400">{site.description}</Text>
+                <Text mt="14px" color="gray.400">{site.description}</Text>
             </Box>
         </RounderBox>
     );
