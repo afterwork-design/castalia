@@ -9,10 +9,12 @@ export interface Site {
 export interface ResourceItem {
     name: string;
     description: string;
+    url: string;
 }
 export interface Resource {
     name: string;
     site: ResourceItem[];
+    icon: string;
 }
 
 export const site = siteJson as Site;

@@ -1,3 +1,4 @@
+
 * {
     box-sizing: content-box;
     margin: 0;
@@ -5,5 +6,6 @@
 }
 
 html,body {
-    background-color: #f8f8f8
+    --main-bg-color: #f8f8f8;
+    background-color: var(--main-bg-color);
 }

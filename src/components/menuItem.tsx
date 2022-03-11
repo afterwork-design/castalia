@@ -16,13 +16,20 @@ const MenuItem: React.FC<Props> = ({
         <HStack
             alignItems="center"
             p="8px 20px"
+            columnGap="10px"
         >
-            <Image src="/avatar.svg"
-                height={30}
-                width={30}
+            <Image
+                src={resource.icon}
+                height={20}
+                width={20}
                 alt={resource.name}
             />
-            <H2 fontWeight="normal" fontSize="1rem">{resource.name}</H2>
+            <H2
+                fontWeight="normal"
+                fontSize="1.2rem"
+            >
+                {resource.name}
+            </H2>
         </HStack>
     )
 };
