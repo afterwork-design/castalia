@@ -17,6 +17,7 @@ const ResourcePanel: React.FC<Props> = ({
             <H2
                 fontSize={16}
                 mb="15px"
+                id={resource.name}
             >
                 {resource.name}
             </H2>

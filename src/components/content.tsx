@@ -15,6 +15,7 @@ const Content = () => {
             {
                 resource.map((item) => (<ResourcePanel key={item.name} resource={item} />))
             }
+            <Box height="100vh"></Box>
         </VStack>
     )
 };

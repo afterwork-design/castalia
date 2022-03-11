@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Text, Box} from "@chakra-ui/react";
 import {H1, RounderBox} from "src/components/primitives";
-import {resource} from "src/server/";
+import {resource, Resource} from "src/server/";
 import MenuItem from "./menuItem";
 
 interface Props {
@@ -13,6 +13,24 @@ const Sider: React.FC<Props> = ({
     siteName,
     description
 }) => {
+    const [activeResource, setActiveResource] = useState<Resource>(resource[0]);
+
+    useEffect(() => {
+        const handle = () => {
+            for (let i = 0; i < resource.length; i++) {
+                const target = document.querySelector(`#${resource[i].name}`);
+                if (target && target.getBoundingClientRect().top >= 0) {
+                    setActiveResource(resource[i]);
+                    break;
+                }
+            }
+        };
+        window.addEventListener("scroll", handle);
+
+        return () => {
+            window.removeEventListener("scroll", handle);
+        }
+    }, []);
 
     return (
         <RounderBox
@@ -29,7 +47,13 @@ const Sider: React.FC<Props> = ({
             <Text fontSize="10px" color="#c1c1c1">{description}</Text>
             <Box mt="30px">
                 {
-                    resource.map((item) => (<MenuItem resource={item} key={item.name} />))
+                    resource.map((item) => (
+                        <MenuItem
+                            resource={item}
+                            key={item.name}
+                            active={activeResource.name === item.name}
+                        />
+                    ))
                 }
             </Box>
         </RounderBox>
