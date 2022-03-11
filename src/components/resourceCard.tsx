@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, {useRef} from "react";
 import {Text, Box} from "@chakra-ui/react";
 import {ResourceItem} from "src/server";
@@ -12,7 +13,7 @@ const ResourceCard: React.FC<Props> = ({
     site
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
-    
+
     const clickHandle = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const linkEle = linkRef.current;
         if (linkEle && event.target !== linkEle) {
@@ -33,12 +34,14 @@ const ResourceCard: React.FC<Props> = ({
             cursor="pointer"
             onClick={clickHandle}
         >
-            <Image
-                src={site.image}
-                alt={site.name}
-                width="80px"
-                height="80px"
-            />
+            <Box flexShrink={0} w="60px">
+                <Image
+                    src={site.image}
+                    alt={site.name}
+                    width={50}
+                    height={50}
+                />
+            </Box>
             <Box>
                 <H3 fontSize="16px">
                     <a
@@ -50,7 +53,7 @@ const ResourceCard: React.FC<Props> = ({
                         {site.name}
                     </a>
                 </H3>
-                <Text mt="14px" color="gray.400">{site.description}</Text>
+                <Text mt="14px" fontSize="14px" color="gray.400">{site.description}</Text>
             </Box>
         </RounderBox>
     );
