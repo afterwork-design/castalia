@@ -43,8 +43,16 @@ const Sider: React.FC<Props> = ({
             textAlign="center"
             paddingTop="50px"
         >
-            <H1 color="#644be4" mb="5px">{siteName}</H1>
-            <Text fontSize="10px" color="#c1c1c1">{description}</Text>
+            {/* <H1 color="#644be4" mb="5px">{siteName}</H1> */}
+            <img
+                src="./castalia.png"
+                width="170"
+                style={{
+                    display: "inline"
+                }}
+            >
+            </img>
+            <Text fontSize="14px" color="#999999">{description}</Text>
             <Box mt="30px">
                 {
                     resource.map((item) => (
