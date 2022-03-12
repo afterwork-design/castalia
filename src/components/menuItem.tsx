@@ -35,7 +35,7 @@ const MenuItem: React.FC<Props> = ({
                 bgColor: "#f1eeff55"
             }}
         >
-            <Image
+            <img
                 src={resource.icon}
                 height={20}
                 width={20}

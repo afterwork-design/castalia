@@ -35,7 +35,7 @@ const ResourceCard: React.FC<Props> = ({
             onClick={clickHandle}
         >
             <Box flexShrink={0} w="60px">
-                <Image
+                <img
                     src={site.image}
                     alt={site.name}
                     width={50}
