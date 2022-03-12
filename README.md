@@ -17,7 +17,7 @@
     {
         "name": "分类一名称",
         // 图片路径，图片都放在 public 文件夹下
-        "icon": "/images/menu/icon.svg",
+        "icon": "./images/menu/icon.svg",
         "site": [
             {
                 "name": "资源一名称",
@@ -25,7 +25,7 @@
                 // 资源url
                 "url": "https://www.baidu.com",
                 // 资源图片，图片放在 public 文件夹下
-                "image": "/avatar.svg"
+                "image": "./avatar.svg"
             }
             ...
         ]
@@ -42,19 +42,19 @@
 
     {
         "name": "Icon",
-        "icon": "/images/menu/icon.svg",
+        "icon": "./images/menu/icon.svg",
         "site": [
             {
                 "name": "IconFont",
                 "description": "IconFont 的描述",
                 "url": "https://www.iconfont.cn/",
-                "image": "/iconfont.svg"
+                "image": "./iconfont.svg"
             },
             {
                 "name": "IconPark",
                 "description": "IconPark 的描述",
                 "url": "https://iconpark.oceanengine.com/home",
-                "image": "/iconpark.svg"
+                "image": "./iconpark.svg"
             }
         ]
     }
