@@ -84,13 +84,13 @@
             {
                 "name": "IMGBIN",
                 "description": "免费，由设计师创建的数百万个透明 PNG 文件",
-                "url": "https://www.baidu.com",
+                "url": "https://imgbin.com",
                 "image": "./images/site/imgbin.jpg"
             },
             {
                 "name": "Hippopx",
                 "description": "免费，各种摄影作品",
-                "url": "https://www.baidu.com",
+                "url": "https://www.hippopx.com",
                 "image": "./images/site/hippopx.jpg"
             }
         ]
@@ -300,7 +300,7 @@
             {
                 "name": "Element Plus",
                 "description": "基于 Vue 3，面向设计师和开发者的组件库",
-                "url": "https://www.baidu.com",
+                "url": "https://element-plus.org/zh-CN",
                 "image": "./images/site/element-plus.jpg"
             },
             {
