@@ -6,7 +6,7 @@ const webpackconfig = require("./webpack.config");
 const IsDevelopment = process.env.NODE_ENV === "development";
 const nextConfig = {
     pageExtensions: ["js", "jsx", "ts", "tsx"],
-    assetPrefix: IsDevelopment ? "" : "/afterwork-design",
+    assetPrefix: IsDevelopment ? "" : "/castalia",
 };
 
 module.exports = withPlugins([], {
