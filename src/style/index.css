@@ -8,5 +8,9 @@
 
 html,body {
     --main-bg-color: #f8f8f8;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color) !important;
+}
+
+body {
+    padding: 20px;
 }
