@@ -34,8 +34,8 @@ const Sider = () => {
             textAlign="center"
             paddingTop="50px"
             flexShrink={0}
-            display="inline-block"
-            height="calc(100vh - 30px)"
+            display={["none", "inline-block", "inline-block", "inline-block", "inline-block"]}
+            height="calc(100vh - 210px)"
         >
             <Box>
                 {
