@@ -265,13 +265,13 @@
     },
     {
         "name": "书籍",
-        "icon": "./images/menu/blog.svg",
+        "icon": "./images/menu/book.svg",
         "site": [
             {
                 "name": "SaltTiger",
                 "description": "每天一本编程书，每天进步一点点",
                 "url": "https://salttiger.com",
-                "image": "./images/castalia-s.png"
+                "image": "./castalia-s.png"
             }
         ]
     },
