@@ -22,7 +22,7 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
         >
             <Image
                 src="./empty.png"
-                minH="110px"
+                h="110px"
             />
         </RounderBox>
     );
