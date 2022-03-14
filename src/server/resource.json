@@ -246,8 +246,8 @@
         ]
     },
     {
-        "name": "博客网站",
-        "icon": "./images/menu/blog.svg",
+        "name": "阅读",
+        "icon": "./images/menu/book.svg",
         "site": [
             {
                 "name": "Medium",
@@ -256,22 +256,16 @@
                 "image": "./images/site/medium.jpg"
             },
             {
-                "name": "Figma Blog",
-                "description": "Figma 官方博客",
-                "url": "https://www.figma.com/blog",
-                "image": "./images/site/figma.jpg"
-            }
-        ]
-    },
-    {
-        "name": "书籍",
-        "icon": "./images/menu/book.svg",
-        "site": [
-            {
                 "name": "SaltTiger",
                 "description": "每天一本编程书，每天进步一点点",
                 "url": "https://salttiger.com",
                 "image": "./castalia-s.png"
+            },
+            {
+                "name": "微信读书",
+                "description": "支持多平台的免费读书软件",
+                "url": "https://weread.qq.com",
+                "image": "./images/site/weread.png"
             }
         ]
     },
