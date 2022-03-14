@@ -6,10 +6,12 @@ import ResourceCard from "./resourceCard";
 
 interface Props {
     resource: Resource;
+    hasCollectBtn: boolean;
 }
 
 const ResourcePanel: React.FC<Props> = ({
-    resource
+    resource,
+    hasCollectBtn
 }) => {
 
     return (
@@ -27,7 +29,7 @@ const ResourcePanel: React.FC<Props> = ({
                 gridTemplateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)", "repeat(5, 1fr)"]}
             >
                 {
-                    resource.site.map((site) => (<ResourceCard key={site.name} site={site} />))
+                    resource.site.map((site) => (<ResourceCard key={site.name} site={site} hasCollectBtn={hasCollectBtn} />))
                 }
             </Grid>
         </Box>
