@@ -1,18 +1,31 @@
-import React from "react";
+import React, {Children, PropsWithChildren} from "react";
 import {Resource} from "src/server";
-import {Box, Flex, Grid} from "@chakra-ui/react";
+import {Box, Flex, Grid, Text, Image} from "@chakra-ui/react";
 import {H2, RounderBox} from "./primitives";
 import ResourceCard from "./resourceCard";
 
 interface Props {
     resource: Resource;
     hasCollectBtn: boolean;
+    empty?: React.ReactNode;
 }
 
-const ResourcePanel: React.FC<Props> = ({
+const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
     resource,
-    hasCollectBtn
+    hasCollectBtn,
+    empty
 }) => {
+    const emptyNode = empty ?? (
+        <RounderBox
+            display="flex"
+            justifyContent="center"
+        >
+            <Image
+                src="./empty.png"
+                minH="110px"
+            />
+        </RounderBox>
+    );
 
     return (
         <Box>
@@ -31,6 +44,7 @@ const ResourcePanel: React.FC<Props> = ({
                 {
                     resource.site.map((site) => (<ResourceCard key={site.name} site={site} hasCollectBtn={hasCollectBtn} />))
                 }
+                {resource.site.length === 0 ? emptyNode : <></>}
             </Grid>
         </Box>
     );

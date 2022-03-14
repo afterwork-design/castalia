@@ -6,9 +6,9 @@ import React, {useEffect, useState} from "react";
 import {myCollectionTableName, getDb, isSupportIndexDB} from "src/util/indexDB";
 
 export const MyCollectionContext = React.createContext<{
-    setMyCollection: React.Dispatch<React.SetStateAction<ResourceItem[]>> 
+    setMyCollection: React.Dispatch<React.SetStateAction<ResourceItem[]>>
 }>({
-    setMyCollection: () => {}
+    setMyCollection: () => { }
 });
 
 const Content = () => {
@@ -44,7 +44,11 @@ const Content = () => {
                 rowGap="30px"
                 display="inline-flex"
             >
-                <ResourcePanel key={my.name} resource={my} hasCollectBtn={false} />
+                <ResourcePanel
+                    key={my.name}
+                    resource={my}
+                    hasCollectBtn={false}
+                />
                 {
                     resource.map((item) => (<ResourcePanel key={item.name} resource={item} hasCollectBtn={true} />))
                 }
