@@ -2,8 +2,16 @@ import {resource} from "src/server";
 import {Box, Stack, VStack, Text, Image} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
 import {RounderBox, H2} from "src/components/primitives"
+import {useEffect} from "react";
+import {isSupportIndexDB} from "src/util/indexDB";
 
 const Content = () => {
+    useEffect(() => {
+        if (isSupportIndexDB()) {
+            
+        }
+    });
+ 
     return (
         <VStack
             bgColor="var(--main-bg-color)"
