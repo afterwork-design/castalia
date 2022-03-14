@@ -1,19 +1,28 @@
 import React, {useEffect, useState} from "react";
-import {Text, Box, HStack} from "@chakra-ui/react";
+import {Box, HStack} from "@chakra-ui/react";
 import {H3, RounderBox} from "src/components/primitives";
 import {resource, Resource} from "src/server/";
 import MenuItem from "./menuItem";
 
 
+const siderResource: Resource[] = [
+    {
+        name: "我的",
+        site: [],
+        icon: "./images/menu/mine.svg"
+    },
+    ...resource
+];
+
 const Sider = () => {
-    const [activeResource, setActiveResource] = useState<Resource>(resource[0]);
+    const [activeResource, setActiveResource] = useState<Resource>(siderResource[0]);
 
     useEffect(() => {
         const handle = () => {
-            for (let i = 0; i < resource.length; i++) {
-                const target = document.querySelector(`#${resource[i].name}`);
+            for (let i = 0; i < siderResource.length; i++) {
+                const target = document.querySelector(`#${siderResource[i].name}`);
                 if (target && target.getBoundingClientRect().top >= 0) {
-                    setActiveResource(resource[i]);
+                    setActiveResource(siderResource[i]);
                     break;
                 }
             }
@@ -39,7 +48,7 @@ const Sider = () => {
         >
             <Box>
                 {
-                    resource.map((item) => (
+                    siderResource.map((item) => (
                         <MenuItem
                             resource={item}
                             key={item.name}
