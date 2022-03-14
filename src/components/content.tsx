@@ -68,7 +68,7 @@ const Content = () => {
                             </Text>
                             <Text>
                                 资源推荐入口：
-                                <a className="linkColor" href="https://github.com/afterwork-design/castalia/issues">github 上提交 issue</a>
+                                <a className="linkColor" href="https://github.com/afterwork-design/castalia/issues?q=label%3A%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90+">github 上提交 issue</a>
                             </Text>
                         </VStack>
                     </Box>
