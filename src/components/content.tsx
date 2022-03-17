@@ -77,9 +77,10 @@ const Content = () => {
                     resource={my}
                     hasCollectBtn={false}
                     hasDeleteBtn
+                    myCollection={myCollection}
                 />
                 {
-                    resource.map((item) => (<ResourcePanel key={item.name} resource={item} hasDeleteBtn={false} hasCollectBtn />))
+                    resource.map((item) => (<ResourcePanel key={item.name} myCollection={myCollection} resource={item} hasDeleteBtn={false} hasCollectBtn />))
                 }
                 <VStack
                     height="calc(100vh - 250px)"
