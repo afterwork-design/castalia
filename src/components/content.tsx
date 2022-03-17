@@ -59,7 +59,7 @@ const Content = () => {
                         title="添加至我的"
                         onClick={() => setAddResourceModalOpen(true)}
                     />
-                    <Image
+                    {/* <Image
                         src="./import.svg"
                         w="22px"
                         cursor="pointer"
@@ -70,15 +70,16 @@ const Content = () => {
                         w="22px"
                         cursor="pointer"
                         title="导出"
-                    />
+                    /> */}
                 </HStack>
                 <ResourcePanel
                     key={my.name}
                     resource={my}
                     hasCollectBtn={false}
+                    hasDeleteBtn
                 />
                 {
-                    resource.map((item) => (<ResourcePanel key={item.name} resource={item} hasCollectBtn={true} />))
+                    resource.map((item) => (<ResourcePanel key={item.name} resource={item} hasDeleteBtn={false} hasCollectBtn />))
                 }
                 <VStack
                     height="calc(100vh - 250px)"

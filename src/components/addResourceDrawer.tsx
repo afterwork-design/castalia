@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useContext} from "react";
 import {
     Drawer,
     DrawerOverlay,
@@ -16,6 +16,8 @@ import {
 } from "@chakra-ui/react";
 import {Field, Form, Formik} from 'formik';
 import {getDb, myCollectionTableName} from "src/util/indexDB";
+import {MyCollectionContext} from "src/components/content";
+import {ResourceItem} from "src/server";
 
 interface Props {
     open: boolean;
@@ -26,6 +28,7 @@ const AddResourceDrawer: FC<Props> = ({
     open,
     close
 }) => {
+    const {setMyCollection} = useContext(MyCollectionContext);
     const toast = useToast();
     return (
         <Drawer
@@ -37,7 +40,7 @@ const AddResourceDrawer: FC<Props> = ({
             <DrawerContent>
                 <Formik
                     initialValues={{name: '', url: '', description: ""}}
-                    onSubmit={(values) => {
+                    onSubmit={(values: ResourceItem) => {
                         getDb().then((db) => {
                             db.write(myCollectionTableName, values).then((res) => {
                                 if (res) {
@@ -46,6 +49,7 @@ const AddResourceDrawer: FC<Props> = ({
                                         status: "success",
                                         duration: 1000
                                     })
+                                    setMyCollection((collection) => ([...collection, values]));
                                     close();
                                 } else {
                                     toast({
@@ -83,6 +87,7 @@ const AddResourceDrawer: FC<Props> = ({
                                                 <FormControl
                                                     isRequired
                                                     isInvalid={form.errors.url && form.touched.url}
+                                                    mt="10px"
                                                 >
                                                     <FormLabel htmlFor="url">资源地址</FormLabel>
                                                     <Input {...field} id="url" placeholder="合法的 url，以 http/https 开头" type="url" />
@@ -96,6 +101,7 @@ const AddResourceDrawer: FC<Props> = ({
                                             ({field, form}: any) => (
                                                 <FormControl
                                                     isInvalid={form.errors.description && form.touched.description}
+                                                    mt="10px"
                                                 >
                                                     <FormLabel htmlFor="url">资源描述</FormLabel>
                                                     <Textarea
