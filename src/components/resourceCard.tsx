@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, {useState, useRef, useEffect, useContext, useLayoutEffect} from "react";
-import {Checkbox, Text, Box} from "@chakra-ui/react";
+import {Checkbox, Text, Box, Image} from "@chakra-ui/react";
 import {ResourceItem} from "src/server";
 import {RounderBox, H3} from "./primitives";
 import {getDb, myCollectionTableName} from "src/util/indexDB";
@@ -9,11 +9,13 @@ import {MyCollectionContext} from "src/components/content";
 interface Props {
     site: ResourceItem;
     hasCollectBtn: boolean;
+    hasDeleteBtn: boolean;
 }
 
 const ResourceCard: React.FC<Props> = ({
     site,
-    hasCollectBtn
+    hasCollectBtn,
+    hasDeleteBtn
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
     const [checked, setChecked] = useState<boolean>(false);
@@ -72,6 +74,28 @@ const ResourceCard: React.FC<Props> = ({
         });
     };
 
+    const deleteFromMyCollection = () => {
+        getDb().then((db) => {
+            db.remove(myCollectionTableName, site.name).then((res) => {
+                if (res) {
+                    console.log("删除成功");
+                    setChecked(false);
+                    setMyCollection((collection) => {
+                        const index = collection.findIndex((item) => item.name === site.name);
+                        if (index !== -1) {
+                            const newCollection = [...collection];
+                            newCollection.splice(index, 1);
+                            return newCollection;
+                        }
+                        return collection;
+                    });
+                } else {
+                    console.log("删除失败");
+                }
+            })
+        })
+    };
+
     return (
         <RounderBox
             display="flex"
@@ -124,6 +148,22 @@ const ResourceCard: React.FC<Props> = ({
                             onChange={checkBoxChange}
                         />
                     </Box>
+                ) : <></>
+            }
+            {
+                hasDeleteBtn ? (
+                    <Image
+                        src="./delete.svg"
+                        height="25px"
+                        pos="absolute"
+                        right="10px"
+                        top="10px"
+                        onClick={(event) => {
+                            event.stopPropagation();
+                            deleteFromMyCollection();
+                        }}
+                        title="删除"
+                    />
                 ) : <></>
             }
         </RounderBox>

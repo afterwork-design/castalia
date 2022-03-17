@@ -7,12 +7,14 @@ import ResourceCard from "./resourceCard";
 interface Props {
     resource: Resource;
     hasCollectBtn: boolean;
+    hasDeleteBtn: boolean;
     empty?: React.ReactNode;
 }
 
 const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
     resource,
     hasCollectBtn,
+    hasDeleteBtn,
     empty
 }) => {
     const emptyNode = empty ?? (
@@ -42,7 +44,7 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
                 gridTemplateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)", "repeat(5, 1fr)"]}
             >
                 {
-                    resource.site.map((site) => (<ResourceCard key={site.name} site={site} hasCollectBtn={hasCollectBtn} />))
+                    resource.site.map((site) => (<ResourceCard key={site.name} site={site} hasDeleteBtn={hasDeleteBtn} hasCollectBtn={hasCollectBtn} />))
                 }
                 {resource.site.length === 0 ? emptyNode : <></>}
             </Grid>
