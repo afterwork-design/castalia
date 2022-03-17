@@ -10,28 +10,17 @@ interface Props {
     site: ResourceItem;
     hasCollectBtn: boolean;
     hasDeleteBtn: boolean;
+    checked?: boolean;
 }
 
 const ResourceCard: React.FC<Props> = ({
     site,
     hasCollectBtn,
-    hasDeleteBtn
+    hasDeleteBtn,
+    checked
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
-    const [checked, setChecked] = useState<boolean>(false);
     const {setMyCollection} = useContext(MyCollectionContext);
-
-    useEffect(() => {
-        getDb().then((db) => {
-            db.read(myCollectionTableName, site.name).then((res) => {
-                if (res) {
-                    setChecked(true);
-                } else {
-                    setChecked(false);
-                }
-            });
-        });
-    }, []);
 
     const clickHandle = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const linkEle = linkRef.current;
@@ -46,7 +35,6 @@ const ResourceCard: React.FC<Props> = ({
                 db.write(myCollectionTableName, site).then((res) => {
                     if (res) {
                         console.log("添加成功");
-                        setChecked(true);
                         setMyCollection((collection) => ([...collection, site]));
                     } else {
                         console.log("添加失败");
@@ -56,7 +44,6 @@ const ResourceCard: React.FC<Props> = ({
                 db.remove(myCollectionTableName, site.name).then((res) => {
                     if (res) {
                         console.log("删除成功");
-                        setChecked(false);
                         setMyCollection((collection) => {
                             const index = collection.findIndex((item) => item.name === site.name);
                             if (index !== -1) {
@@ -79,7 +66,7 @@ const ResourceCard: React.FC<Props> = ({
             db.remove(myCollectionTableName, site.name).then((res) => {
                 if (res) {
                     console.log("删除成功");
-                    setChecked(false);
+                    // setChecked(false);
                     setMyCollection((collection) => {
                         const index = collection.findIndex((item) => item.name === site.name);
                         if (index !== -1) {
