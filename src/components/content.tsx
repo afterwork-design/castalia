@@ -4,6 +4,7 @@ import ResourcePanel from "./resourcePanel";
 import {RounderBox, H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
 import {myCollectionTableName, getDb, isSupportIndexDB} from "src/util/indexDB";
+import AddResourceDrawer from "./addResourceDrawer";
 
 export const MyCollectionContext = React.createContext<{
     setMyCollection: React.Dispatch<React.SetStateAction<ResourceItem[]>>
@@ -13,6 +14,7 @@ export const MyCollectionContext = React.createContext<{
 
 const Content = () => {
     const [myCollection, setMyCollection] = useState<ResourceItem[]>([]);
+    const [addResourceModalOpen, setAddResourceModalOpen] = useState<boolean>(false);
 
     const updateMyCollection = () => {
         if (isSupportIndexDB()) {
@@ -55,6 +57,7 @@ const Content = () => {
                         w="22px"
                         cursor="pointer"
                         title="添加至我的"
+                        onClick={() => setAddResourceModalOpen(true)}
                     />
                     <Image
                         src="./import.svg"
@@ -109,6 +112,7 @@ const Content = () => {
                     </Text>
                 </VStack>
             </VStack>
+            <AddResourceDrawer open={addResourceModalOpen} close={() => setAddResourceModalOpen(false)} />
         </MyCollectionContext.Provider>
     )
 };

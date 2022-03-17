@@ -1,9 +1,4 @@
 export const isSupportIndexDB = () => {
-    // const winObj = window as any;
-    // window.indexedDB = winObj.indexedDB || winObj.mozIndexedDB || winObj.webkitIndexedDB || winObj.msIndexedDB;
-    // window.IDBTransaction = winObj.IDBTransaction || winObj.webkitIDBTransaction || winObj.msIDBTransaction || {READ_WRITE: "readwrite"};
-    // window.IDBKeyRange = winObj.IDBKeyRange || winObj.webkitIDBKeyRange || winObj.msIDBKeyRange;
-
     if (!window.indexedDB) {
         console.log("Your browser doesn't support a stable version of IndexedDB. Such and such feature will not be available.");
         return false;
@@ -33,7 +28,8 @@ const initDb = (db: IDBDatabase): DatabaseOperation => {
                 res(true);
             };
 
-            request.onerror = () => {
+            request.onerror = (error) => {
+                console.log(error);
                 res(false);
             };
         });
@@ -125,3 +121,5 @@ export const getDb = (version = 1) => new Promise<DatabaseOperation>((res, rej) 
         };
     };
 });
+
+const db = getDb();
