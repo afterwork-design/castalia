@@ -1,9 +1,10 @@
 import {resource, ResourceItem} from "src/server";
-import {Box, Stack, VStack, Text, Image} from "@chakra-ui/react";
+import {Box, HStack, VStack, Text, Image} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
 import {RounderBox, H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
 import {myCollectionTableName, getDb, isSupportIndexDB} from "src/util/indexDB";
+import AddResourceDrawer from "./addResourceDrawer";
 
 export const MyCollectionContext = React.createContext<{
     setMyCollection: React.Dispatch<React.SetStateAction<ResourceItem[]>>
@@ -13,6 +14,7 @@ export const MyCollectionContext = React.createContext<{
 
 const Content = () => {
     const [myCollection, setMyCollection] = useState<ResourceItem[]>([]);
+    const [addResourceModalOpen, setAddResourceModalOpen] = useState<boolean>(false);
 
     const updateMyCollection = () => {
         if (isSupportIndexDB()) {
@@ -43,14 +45,41 @@ const Content = () => {
                 alignItems="stretch"
                 rowGap="30px"
                 display="inline-flex"
+                pos="relative"
             >
+                <HStack
+                    pos="absolute"
+                    right="10px"
+                    top="10px"
+                >
+                    <Image
+                        src="./add.svg"
+                        w="22px"
+                        cursor="pointer"
+                        title="添加至我的"
+                        onClick={() => setAddResourceModalOpen(true)}
+                    />
+                    {/* <Image
+                        src="./import.svg"
+                        w="22px"
+                        cursor="pointer"
+                        title="导入"
+                    />
+                    <Image
+                        src="./export.svg"
+                        w="22px"
+                        cursor="pointer"
+                        title="导出"
+                    /> */}
+                </HStack>
                 <ResourcePanel
                     key={my.name}
                     resource={my}
                     hasCollectBtn={false}
+                    hasDeleteBtn
                 />
                 {
-                    resource.map((item) => (<ResourcePanel key={item.name} resource={item} hasCollectBtn={true} />))
+                    resource.map((item) => (<ResourcePanel key={item.name} resource={item} hasDeleteBtn={false} hasCollectBtn />))
                 }
                 <VStack
                     height="calc(100vh - 250px)"
@@ -61,6 +90,10 @@ const Content = () => {
                             <Text>
                                 Castaila 是一个资源导航网站，不只是设计师的灵感源泉，精选国内外优质网站，
                                 让每个人都能找到自己需要的资源。如果你有比较好的资源，可以通过下方地址提供给我们。
+                            </Text>
+                            <Text>
+                                <b>我的</b>面板中所有内容都是存储在浏览器本地的，所以更换电脑或者浏览器，并不会同步数据。
+                                你可以点击卡片右上角的复选框将你喜欢的网站添加至<b>我的</b>。
                             </Text>
                             <Text>
                                 项目地址：
@@ -80,6 +113,7 @@ const Content = () => {
                     </Text>
                 </VStack>
             </VStack>
+            <AddResourceDrawer open={addResourceModalOpen} close={() => setAddResourceModalOpen(false)} />
         </MyCollectionContext.Provider>
     )
 };
