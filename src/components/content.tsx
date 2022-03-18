@@ -1,5 +1,5 @@
 import {resource, ResourceItem} from "src/server";
-import {Box, HStack, VStack, Text, Image} from "@chakra-ui/react";
+import {Box, HStack, VStack, Text, Image, useToast} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
 import {RounderBox, H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
@@ -15,6 +15,7 @@ export const MyCollectionContext = React.createContext<{
 const Content = () => {
     const [myCollection, setMyCollection] = useState<ResourceItem[]>([]);
     const [addResourceModalOpen, setAddResourceModalOpen] = useState<boolean>(false);
+    const toast = useToast();
 
     const updateMyCollection = () => {
         if (isSupportIndexDB()) {
@@ -38,6 +39,56 @@ const Content = () => {
         icon: ""
     };
 
+    const importMyCollection = () => {
+        var elem = document.createElement("input");
+        elem.setAttribute("type", "file");
+        elem.addEventListener("change", (event: any) => {
+            if (event.target.files.length !== 1) {
+                console.log("No file selected");
+            } else {
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    const my = JSON.parse(reader.result?.toString() as string);
+                    getDb().then((db) => {
+                        if (my instanceof Array) {
+                            const writePromises: Promise<boolean>[] = [];
+                            my.forEach((item) => {
+                                writePromises.push(db.write(myCollectionTableName, item));
+                            });
+                            Promise.allSettled(writePromises).then(() => {
+                                toast({
+                                    title: "导入完成",
+                                    status: "success",
+                                    duration: 1000
+                                });
+                                updateMyCollection();
+                            })
+                        } else {
+                            toast({
+                                title: "导入失败, 文件格式错误",
+                                status: "error",
+                                duration: 2000
+                            })
+                        }
+                    });
+                };
+
+                reader.readAsText(event.target.files[0]);
+            }
+        });
+
+        elem.click();
+    };
+
+    const exportMyCollectionToLocal = () => {
+        var blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2,-1);
+        var url = URL.createObjectURL(blob);
+        var elem = document.createElement("a");
+        elem.href = url;
+        elem.download = "我的收藏.json";
+        elem.click();
+    };
+
     return (
         <MyCollectionContext.Provider value={{setMyCollection}}>
             <VStack
@@ -59,18 +110,20 @@ const Content = () => {
                         title="添加至我的"
                         onClick={() => setAddResourceModalOpen(true)}
                     />
-                    {/* <Image
+                    <Image
                         src="./import.svg"
                         w="22px"
                         cursor="pointer"
                         title="导入"
+                        onClick={importMyCollection}
                     />
                     <Image
                         src="./export.svg"
                         w="22px"
                         cursor="pointer"
                         title="导出"
-                    /> */}
+                        onClick={exportMyCollectionToLocal}
+                    />
                 </HStack>
                 <ResourcePanel
                     key={my.name}
