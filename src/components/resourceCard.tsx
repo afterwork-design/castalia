@@ -89,8 +89,7 @@ const ResourceCard: React.FC<Props> = ({
             p="15px"
             columnGap="15px"
             _hover={{
-                transform: "scale(0.95)",
-                bgColor: "#ebedec"
+                boxShadow: "rgb(0 36 100 / 20%) 0px 26px 20px -24px"
             }}
             transition="all 1s"
             cursor="pointer"
@@ -131,6 +130,7 @@ const ResourceCard: React.FC<Props> = ({
                         onClick={(event) => event.stopPropagation()}
                     >
                         <Checkbox
+                            cursor="default"
                             isChecked={checked}
                             onChange={checkBoxChange}
                         />
@@ -150,6 +150,7 @@ const ResourceCard: React.FC<Props> = ({
                             deleteFromMyCollection();
                         }}
                         title="删除"
+                        cursor="default"
                     />
                 ) : <></>
             }
