@@ -8,8 +8,8 @@ interface Props {
     resource: Resource;
     hasCollectBtn: boolean;
     hasDeleteBtn: boolean;
+    hasDragBtn: boolean;
     myCollection: ResourceItem[];
-
     empty?: React.ReactNode;
 }
 
@@ -17,6 +17,7 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
     resource,
     hasCollectBtn,
     hasDeleteBtn,
+    hasDragBtn,
     empty,
     myCollection
 }) => {
@@ -53,6 +54,7 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
                             site={site}
                             hasDeleteBtn={hasDeleteBtn}
                             hasCollectBtn={hasCollectBtn}
+                            hasDragBtn={hasDragBtn}
                             checked={myCollection.findIndex((item) => item.name === site.name) !== -1}
                         />
                     ))

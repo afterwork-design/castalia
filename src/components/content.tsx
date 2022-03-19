@@ -81,7 +81,7 @@ const Content = () => {
     };
 
     const exportMyCollectionToLocal = () => {
-        var blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2,-1);
+        var blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2, -1);
         var url = URL.createObjectURL(blob);
         var elem = document.createElement("a");
         elem.href = url;
@@ -130,10 +130,20 @@ const Content = () => {
                     resource={my}
                     hasCollectBtn={false}
                     hasDeleteBtn
+                    hasDragBtn
                     myCollection={myCollection}
                 />
                 {
-                    resource.map((item) => (<ResourcePanel key={item.name} myCollection={myCollection} resource={item} hasDeleteBtn={false} hasCollectBtn />))
+                    resource.map((item) => (
+                        <ResourcePanel
+                            key={item.name}
+                            myCollection={myCollection}
+                            resource={item}
+                            hasDeleteBtn={false}
+                            hasDragBtn={false}
+                            hasCollectBtn
+                        />
+                    ))
                 }
                 <VStack
                     height="calc(100vh - 250px)"
