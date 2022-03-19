@@ -2,22 +2,20 @@ import React, {PropsWithChildren} from "react";
 import {Resource, ResourceItem} from "src/server";
 import {Box, Grid, Image} from "@chakra-ui/react";
 import {H2, RounderBox} from "./primitives";
-import ResourceCard from "./resourceCard";
+import {NormalCard, MyCollectionCard} from "./resourceCard";
+
+type PanelType = "MY_COLLECTION" | "NORMAL";
 
 interface Props {
     resource: Resource;
-    hasCollectBtn: boolean;
-    hasDeleteBtn: boolean;
-    hasDragBtn: boolean;
+    type: PanelType;
     myCollection: ResourceItem[];
     empty?: React.ReactNode;
 }
 
 const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
     resource,
-    hasCollectBtn,
-    hasDeleteBtn,
-    hasDragBtn,
+    type,
     empty,
     myCollection
 }) => {
@@ -48,16 +46,24 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
                 gridTemplateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)", "repeat(5, 1fr)"]}
             >
                 {
-                    resource.site.map((site) => (
-                        <ResourceCard
-                            key={site.name}
-                            site={site}
-                            hasDeleteBtn={hasDeleteBtn}
-                            hasCollectBtn={hasCollectBtn}
-                            hasDragBtn={hasDragBtn}
-                            checked={myCollection.findIndex((item) => item.name === site.name) !== -1}
-                        />
-                    ))
+                    resource.site.map((site) => {
+                        if (type === "MY_COLLECTION") {
+                            return (
+                                <MyCollectionCard
+                                    key={site.name}
+                                    site={site}
+                                />
+                            )
+                        } else {
+                            return (
+                                <NormalCard
+                                    key={site.name}
+                                    site={site}
+                                    checked={myCollection.findIndex((item) => item.name === site.name) !== -1}
+                                />
+                            )
+                        }
+                    })
                 }
                 {resource.site.length === 0 ? emptyNode : <></>}
             </Grid>
