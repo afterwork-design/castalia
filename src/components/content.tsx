@@ -1,7 +1,7 @@
 import {resource, ResourceItem} from "src/server";
 import {Box, HStack, VStack, Text, Image, useToast} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
-import {RounderBox, H2} from "src/components/primitives"
+import {H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
 import {myCollectionTableName, getDb, isSupportIndexDB} from "src/util/indexDB";
 import AddResourceDrawer from "./addResourceDrawer";
@@ -128,9 +128,7 @@ const Content = () => {
                 <ResourcePanel
                     key={my.name}
                     resource={my}
-                    hasCollectBtn={false}
-                    hasDeleteBtn
-                    hasDragBtn
+                    type="MY_COLLECTION"
                     myCollection={myCollection}
                 />
                 {
@@ -139,9 +137,7 @@ const Content = () => {
                             key={item.name}
                             myCollection={myCollection}
                             resource={item}
-                            hasDeleteBtn={false}
-                            hasDragBtn={false}
-                            hasCollectBtn
+                            type="NORMAL"
                         />
                     ))
                 }
