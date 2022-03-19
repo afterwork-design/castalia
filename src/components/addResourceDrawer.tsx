@@ -28,7 +28,7 @@ const AddResourceDrawer: FC<Props> = ({
     open,
     close
 }) => {
-    const {setMyCollection} = useContext(MyCollectionContext);
+    const {updateMyCollection, myCollection} = useContext(MyCollectionContext);
     const toast = useToast();
     return (
         <Drawer
@@ -42,14 +42,14 @@ const AddResourceDrawer: FC<Props> = ({
                     initialValues={{name: '', url: '', description: ""}}
                     onSubmit={(values: ResourceItem) => {
                         getDb().then((db) => {
-                            db.write(myCollectionTableName, values).then((res) => {
+                            db.write(myCollectionTableName, {sort: myCollection.length, ...values}).then((res) => {
                                 if (res) {
                                     toast({
                                         title: "添加资源成功",
                                         status: "success",
                                         duration: 1000
                                     })
-                                    setMyCollection((collection) => ([...collection, values]));
+                                    updateMyCollection();
                                     close();
                                 } else {
                                     toast({

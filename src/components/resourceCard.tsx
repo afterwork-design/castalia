@@ -6,6 +6,10 @@ import {RounderBox, H3} from "./primitives";
 import {getDb, myCollectionTableName} from "src/util/indexDB";
 import {MyCollectionContext} from "src/components/content";
 
+export interface Data extends ResourceItem {
+    sort: number;
+}
+
 interface Props {
     site: ResourceItem;
 }
@@ -73,32 +77,30 @@ export const NormalCard: React.FC<{site: ResourceItem; checked: boolean}> = ({
     site,
     checked
 }) => {
-    const {setMyCollection} = useContext(MyCollectionContext);
+    const {updateMyCollection, myCollection} = useContext(MyCollectionContext);
 
     const checkBoxChange = () => {
         getDb().then((db) => {
             if (!checked) {
-                db.write(myCollectionTableName, site).then((res) => {
+                db.write(myCollectionTableName, {sort: myCollection.length, ...site}).then((res) => {
                     if (res) {
                         console.log("添加成功");
-                        setMyCollection((collection) => ([...collection, site]));
+                        updateMyCollection();
                     } else {
                         console.log("添加失败");
                     }
                 });
             } else {
-                db.remove(myCollectionTableName, site.name).then((res) => {
+                db.remove(myCollectionTableName, site.name).then(async (res) => {
                     if (res) {
                         console.log("删除成功");
-                        setMyCollection((collection) => {
-                            const index = collection.findIndex((item) => item.name === site.name);
-                            if (index !== -1) {
-                                const newCollection = [...collection];
-                                newCollection.splice(index, 1);
-                                return newCollection;
+                        const dataSite = myCollection.find((item) => item.name === site.name);
+                        if(dataSite) {
+                            for (let i = dataSite.sort + 1; i < myCollection.length; i++) {
+                                await db.update(myCollectionTableName, {...myCollection[i], sort: i - 1});
                             }
-                            return collection;
-                        });
+                        }
+                        updateMyCollection();
                     } else {
                         console.log("删除失败");
                     }
@@ -125,26 +127,20 @@ export const NormalCard: React.FC<{site: ResourceItem; checked: boolean}> = ({
     );
 };
 
-export const MyCollectionCard: React.FC<{site: ResourceItem;}> = ({
+export const MyCollectionCard: React.FC<{site: Data;}> = ({
     site
 }) => {
-    const {setMyCollection} = useContext(MyCollectionContext);
+    const {updateMyCollection, myCollection} = useContext(MyCollectionContext);
 
     const deleteFromMyCollection = () => {
         getDb().then((db) => {
-            db.remove(myCollectionTableName, site.name).then((res) => {
+            db.remove(myCollectionTableName, site.name).then(async (res) => {
                 if (res) {
                     console.log("删除成功");
-                    // setChecked(false);
-                    setMyCollection((collection) => {
-                        const index = collection.findIndex((item) => item.name === site.name);
-                        if (index !== -1) {
-                            const newCollection = [...collection];
-                            newCollection.splice(index, 1);
-                            return newCollection;
-                        }
-                        return collection;
-                    });
+                    for (let i = site.sort + 1; i < myCollection.length; i++) {
+                        await db.update(myCollectionTableName, {...myCollection[i], sort: i - 1});
+                    }
+                    updateMyCollection();
                 } else {
                     console.log("删除失败");
                 }

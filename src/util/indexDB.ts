@@ -15,6 +15,7 @@ interface DatabaseOperation {
     remove: (tableName: string, key: any) => Promise<boolean>;
     read: (tableName: string, key: string) => Promise<unknown | null>;
     readAll: (tableName: string) => Promise<unknown | null>;
+    update: (tableName: string, data: any, key?: IDBValidKey) => Promise<boolean>;
 }
 
 const initDb = (db: IDBDatabase): DatabaseOperation => {
@@ -89,11 +90,26 @@ const initDb = (db: IDBDatabase): DatabaseOperation => {
         });
     };
 
+    const update = (tableName: string, data: any, key?: IDBValidKey): Promise<boolean> => {
+        const store = db.transaction([tableName], "readwrite").objectStore(tableName);
+        const request = store.put(data, key);
+
+        return new Promise((res) => {
+            request.onsuccess = () => {
+                res(true);
+            };
+            request.onerror = () => {
+                res(false);
+            };
+        });
+    };
+
     return {
         write,
         remove,
         read,
-        readAll
+        readAll,
+        update
     };
 };
 
