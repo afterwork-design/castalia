@@ -10,6 +10,7 @@ interface Props {
     site: ResourceItem;
     hasCollectBtn: boolean;
     hasDeleteBtn: boolean;
+    hasDragBtn: boolean;
     checked?: boolean;
 }
 
@@ -17,6 +18,7 @@ const ResourceCard: React.FC<Props> = ({
     site,
     hasCollectBtn,
     hasDeleteBtn,
+    hasDragBtn,
     checked
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
@@ -95,6 +97,7 @@ const ResourceCard: React.FC<Props> = ({
             cursor="pointer"
             onClick={clickHandle}
             pos="relative"
+            pr="60px"
         >
             {
                 site.image ? (
@@ -141,7 +144,7 @@ const ResourceCard: React.FC<Props> = ({
                 hasDeleteBtn ? (
                     <Image
                         src="./delete.svg"
-                        height="25px"
+                        height="24px"
                         pos="absolute"
                         right="10px"
                         top="10px"
@@ -151,6 +154,21 @@ const ResourceCard: React.FC<Props> = ({
                         }}
                         title="删除"
                         cursor="default"
+                    />
+                ) : <></>
+            }
+            {
+                hasDragBtn ? (
+                    <Image
+                        src="./drag.svg"
+                        height="20px"
+                        pos="absolute"
+                        right="12px"
+                        bottom="10px"
+                        onClick={(event) => {
+                            event.stopPropagation();
+                        }}
+                        cursor="grab"
                     />
                 ) : <></>
             }
