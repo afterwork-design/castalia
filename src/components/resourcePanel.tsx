@@ -2,7 +2,7 @@ import React, {PropsWithChildren} from "react";
 import {Resource, ResourceItem} from "src/server";
 import {Box, Grid, Image} from "@chakra-ui/react";
 import {H2, RounderBox} from "./primitives";
-import {NormalCard, MyCollectionCard} from "./resourceCard";
+import {NormalCard, MyCollectionCard, Data} from "./resourceCard";
 
 type PanelType = "MY_COLLECTION" | "NORMAL";
 
@@ -51,7 +51,7 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
                             return (
                                 <MyCollectionCard
                                     key={site.name}
-                                    site={site}
+                                    site={site as Data}
                                 />
                             )
                         } else {

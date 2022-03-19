@@ -5,15 +5,18 @@ import {H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
 import {myCollectionTableName, getDb, isSupportIndexDB} from "src/util/indexDB";
 import AddResourceDrawer from "./addResourceDrawer";
+import {Data} from "./resourceCard";
 
 export const MyCollectionContext = React.createContext<{
-    setMyCollection: React.Dispatch<React.SetStateAction<ResourceItem[]>>
+    myCollection: Data[];
+    updateMyCollection: () => void;
 }>({
-    setMyCollection: () => { }
+    myCollection: [],
+    updateMyCollection: () => {}
 });
 
 const Content = () => {
-    const [myCollection, setMyCollection] = useState<ResourceItem[]>([]);
+    const [myCollection, setMyCollection] = useState<Data[]>([]);
     const [addResourceModalOpen, setAddResourceModalOpen] = useState<boolean>(false);
     const toast = useToast();
 
@@ -21,8 +24,10 @@ const Content = () => {
         if (isSupportIndexDB()) {
             getDb().then((db) => {
                 db.readAll(myCollectionTableName).then((res => {
-                    if (res) {
-                        setMyCollection(res as ResourceItem[]);
+                    const items = res as Data[];
+                    if (items) {
+                        items.sort((item1, item2) => item1.sort - item2.sort);
+                        setMyCollection(items);
                     }
                 }));
             });
@@ -90,7 +95,7 @@ const Content = () => {
     };
 
     return (
-        <MyCollectionContext.Provider value={{setMyCollection}}>
+        <MyCollectionContext.Provider value={{myCollection, updateMyCollection}}>
             <VStack
                 bgColor="var(--main-bg-color)"
                 alignItems="stretch"
