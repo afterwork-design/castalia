@@ -1,9 +1,7 @@
 import {LayoutPage} from "../typing";
-import {useEffect, useState} from "react";
 import {Box, Flex, HStack} from "@chakra-ui/react";
 import Sider from "src/components/sider";
 import Content from "src/components/content";
-import {GetStaticProps} from "next";
 import ContentTop from "src/components/contentTop";
 
 const Home: LayoutPage = () => {
