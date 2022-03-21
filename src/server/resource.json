@@ -48,54 +48,6 @@
         ]
     },
     {
-        "name": "图片",
-        "icon": "./images/menu/picture.svg",
-        "site": [
-            {
-                "name": "Unsplash",
-                "description": "免费，由世界各地创作者提供的高质量图片",
-                "url": "https://unsplash.com",
-                "image": "./images/site/unsplash.jpg"
-            },
-            {
-                "name": "Pexels",
-                "description": "免费，包括图片和视频",
-                "url": "https://www.pexels.com",
-                "image": "./images/site/pexels.jpg"
-            },
-            {
-                "name": "Pixabay",
-                "description": "免费，超过 250 万张高质量的作品，包括图片、视频和音乐",
-                "url": "https://pixabay.com",
-                "image": "./images/site/pixabay.jpg"
-            },
-            {
-                "name": "SplitShire",
-                "description": "免费，精美独特的图片库",
-                "url": "https://www.splitshire.com",
-                "image": "./images/site/splitshire.jpg"
-            },
-            {
-                "name": "StolSnap",
-                "description": "免费，每天都更新图片",
-                "url": "https://stocksnap.io",
-                "image": "./images/site/stocksnap.jpg"
-            },
-            {
-                "name": "IMGBIN",
-                "description": "免费，由设计师创建的数百万个透明 PNG 文件",
-                "url": "https://imgbin.com",
-                "image": "./images/site/imgbin.jpg"
-            },
-            {
-                "name": "Hippopx",
-                "description": "免费，各种摄影作品",
-                "url": "https://www.hippopx.com",
-                "image": "./images/site/hippopx.jpg"
-            }
-        ]
-    },
-    {
         "name": "插画",
         "icon": "./images/menu/illustration.svg",
         "site": [
@@ -174,6 +126,54 @@
         ]
     },
     {
+        "name": "图片",
+        "icon": "./images/menu/picture.svg",
+        "site": [
+            {
+                "name": "Unsplash",
+                "description": "免费，由世界各地创作者提供的高质量图片",
+                "url": "https://unsplash.com",
+                "image": "./images/site/unsplash.jpg"
+            },
+            {
+                "name": "Pexels",
+                "description": "免费，包括图片和视频",
+                "url": "https://www.pexels.com",
+                "image": "./images/site/pexels.jpg"
+            },
+            {
+                "name": "Pixabay",
+                "description": "免费，超过 250 万张高质量的作品，包括图片、视频和音乐",
+                "url": "https://pixabay.com",
+                "image": "./images/site/pixabay.jpg"
+            },
+            {
+                "name": "SplitShire",
+                "description": "免费，精美独特的图片库",
+                "url": "https://www.splitshire.com",
+                "image": "./images/site/splitshire.jpg"
+            },
+            {
+                "name": "StolSnap",
+                "description": "免费，每天都更新图片",
+                "url": "https://stocksnap.io",
+                "image": "./images/site/stocksnap.jpg"
+            },
+            {
+                "name": "IMGBIN",
+                "description": "免费，由设计师创建的数百万个透明 PNG 文件",
+                "url": "https://imgbin.com",
+                "image": "./images/site/imgbin.jpg"
+            },
+            {
+                "name": "Hippopx",
+                "description": "免费，各种摄影作品",
+                "url": "https://www.hippopx.com",
+                "image": "./images/site/hippopx.jpg"
+            }
+        ]
+    },
+    {
         "name": "工具",
         "icon": "./images/menu/tool.svg",
         "site": [
@@ -182,6 +182,12 @@
                 "description": "高质量图片压缩网站",
                 "url": "https://tinypng.com",
                 "image": "./images/site/tinypng.jpg"
+            },
+            {
+                "name": "docsmall",
+                "description": "在线免费图片、PDF压缩工具",
+                "url": "https://docsmall.com",
+                "image": "./images/site/docsmall.jpg"
             },
             {
                 "name": "Canva",
@@ -212,6 +218,24 @@
                 "description": "用P5.js做的小工具合集",
                 "url": "https://wangyasai.github.io/designtools.html",
                 "image": "./images/site/yasai.jpg"
+            },
+            {
+                "name": "Emoji XD",
+                "description": "线上Emoji百科全书，支持关键词搜索",
+                "url": "https://emojixd.com",
+                "image": "./images/site/emojixd.jpg"
+            },
+            {
+                "name": "CodePen",
+                "description": "在线代码编辑器和学习环境，包含许多 Web 设计相关资源",
+                "url": "https://codepen.io",
+                "image": "./images/site/codepen.jpg"
+            },
+            {
+                "name": "即时设计",
+                "description": "可实时协作的专业UI设计工具",
+                "url": "https://js.design",
+                "image": "./images/site/js-design.jpg"
             }
         ]
     },
@@ -242,6 +266,12 @@
                 "description": "日本插画师",
                 "url": "https://chloetakahashi.net",
                 "image": "./images/site/chloe-takahashi.jpg"
+            },
+            {
+                "name": "Tang Weijuan",
+                "description": "设计师",
+                "url": "https://tangweijuan.com",
+                "image": "./images/site/tangweijuan.jpg"
             }
         ]
     },
@@ -266,6 +296,12 @@
                 "description": "支持多平台的免费读书软件",
                 "url": "https://weread.qq.com",
                 "image": "./images/site/weread.png"
+            },
+            {
+                "name": "NN Group",
+                "description": "专业的用户体验知识",
+                "url": "https://www.nngroup.com",
+                "image": "./images/site/nng.jpg"
             }
         ]
     },
