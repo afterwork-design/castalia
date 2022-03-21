@@ -1,5 +1,5 @@
 import {resource, ResourceItem} from "src/server";
-import {Box, HStack, VStack, Text, Image, useToast} from "@chakra-ui/react";
+import {Box, HStack, VStack, Text, Image, useToast, Link} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
 import {RounderBox, H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
@@ -81,7 +81,7 @@ const Content = () => {
     };
 
     const exportMyCollectionToLocal = () => {
-        var blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2,-1);
+        var blob = new Blob([JSON.stringify([myCollection], null, 2)], {type: "application/json;charset=utf-8"}).slice(2, -1);
         var url = URL.createObjectURL(blob);
         var elem = document.createElement("a");
         elem.href = url;
@@ -142,9 +142,20 @@ const Content = () => {
                         <H2 fontSize="16px" mb="15px">关于</H2>
                         <VStack alignItems="flex-start" fontSize="16px">
                             <Text>
-                                Castaila 是一个资源导航网站，不只是设计师的灵感源泉，精选国内外优质网站，
+                                Castaila 是一个资源导航网站，精选国内外优质网站，
                                 让每个人都能找到自己需要的资源。如果你有比较好的资源，可以通过下方地址提供给我们。
                             </Text>
+                            <Text>
+                                Castalia 是 Afterwork 中的一个项目，想了解更多其他项目可以点击下方图片。
+                            </Text>
+                            <Link
+                                href="https://afterwork-design.github.io"
+                            >
+                                <Image
+                                    src="./afterwork.png"
+                                    m="15px 0"
+                                />
+                            </Link>
                             <Text>
                                 <b>我的</b>面板中所有内容都是存储在浏览器本地的，所以更换电脑或者浏览器，并不会同步数据。
                                 你可以点击卡片右上角的复选框将你喜欢的网站添加至<b>我的</b>。

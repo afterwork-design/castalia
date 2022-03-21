@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {Box, HStack} from "@chakra-ui/react";
-import {H3, RounderBox} from "src/components/primitives";
+import {Box} from "@chakra-ui/react";
+import {RounderBox} from "src/components/primitives";
 import {resource, Resource} from "src/server/";
 import MenuItem from "./menuItem";
 
@@ -57,29 +57,6 @@ const Sider = () => {
                     ))
                 }
             </Box>
-            <HStack
-                position="absolute"
-                bottom="15px"
-                pl="20px"
-                fontSize="16px"
-                columnGap="10px"
-                cursor="pointer"
-                alignItems="center"
-            >
-                <H3
-                    fontWeight="normal"
-                    fontSize="14px"
-                >
-                    <a href="https://github.com/afterwork-design/castalia/">
-                        <img
-                            src="./github.png"
-                            height={20}
-                            width={20}
-                            alt="github"
-                        />
-                    </a>
-                </H3>
-            </HStack>
         </RounderBox>
     );
 };
