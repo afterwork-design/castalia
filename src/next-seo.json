@@ -1,14 +1,4 @@
 {
     "title": "Castalia",
-    "description": "Castaila 是一个资源导航网站，不只是设计师的灵感源泉，精选国内外优质网站，让每个人都能找到自己需要的网站",
-    "additionalMetaTags": [
-        {
-            "property": "author",
-            "content": "Tang Weijuan"
-        },
-        {
-            "property": "keywords",
-            "content": "site navigation,网站导航,设计导航,castaila,design,design resource,blog,icon,illustrator"
-        }
-    ]
+    "description": "蓝洞搜书",
 }
