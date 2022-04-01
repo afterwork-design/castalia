@@ -40,6 +40,7 @@ const MenuItem: React.FC<Props> = ({
                 height={20}
                 width={20}
                 alt={resource.name}
+                loading="lazy"
             />
             <H2
                 fontWeight="normal"
