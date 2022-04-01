@@ -13,7 +13,7 @@
                 "name": "Iconfont",
                 "description": "免费，中文，图标数量丰富，包含插画资源",
                 "url": "https://www.iconfont.cn",
-                "image": "./images/site/iconfont.jpg"
+                "image": "./images/site/iconfont.png"
             },
             {
                 "name": "Ikonate",
@@ -97,7 +97,7 @@
                 "name": "ColorDrop",
                 "description": "每组4种颜色",
                 "url": "https://colordrop.io",
-                "image": "./images/site/colordrop.jpg"
+                "image": "./images/site/colordrop.png"
             },
             {
                 "name": "中国色",
@@ -170,6 +170,18 @@
                 "description": "免费，各种摄影作品",
                 "url": "https://www.hippopx.com",
                 "image": "./images/site/hippopx.jpg"
+            },
+            {
+                "name": "RESHOT",
+                "description": "免费图标、插图和照片，可商用",
+                "url": "https://www.reshot.com/",
+                "image": "./images/site/reshot.png"
+            },
+            {
+                "name": "POND5",
+                "description": "公共领域，有图片，音乐，模型等数千个历史媒体文件",
+                "url": "https://www.pond5.com/public-domain",
+                "image": "./images/site/pond5.png"
             }
         ]
     },
@@ -229,13 +241,13 @@
                 "name": "CodePen",
                 "description": "在线代码编辑器和学习环境，包含许多 Web 设计相关资源",
                 "url": "https://codepen.io",
-                "image": "./images/site/codepen.jpg"
+                "image": "./images/site/codepen.png"
             },
             {
                 "name": "即时设计",
                 "description": "可实时协作的专业UI设计工具",
                 "url": "https://js.design",
-                "image": "./images/site/js-design.jpg"
+                "image": "./images/site/js-design.png"
             }
         ]
     },
