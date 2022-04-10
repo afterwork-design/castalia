@@ -248,6 +248,24 @@
                 "description": "可实时协作的专业UI设计工具",
                 "url": "https://js.design",
                 "image": "./images/site/js-design.png"
+            },
+            {
+                "name": "中国地图矢量图",
+                "description": "支持多种数据格式，包括 json、svg 等，区域最小可拆分至区县",
+                "url": "https://datav.aliyun.com/portal/school/atlas/area_selector",
+                "image": "./images/site/datav.png"
+            },
+            {
+                "name": "磨砂玻璃效果生成器",
+                "description": "在线调节生成磨砂玻璃效果，可直接复制CSS",
+                "url": "https://hype4.academy/tools/glassmorphism-generator",
+                "image": "./images/site/glassmorphism.png"
+            },
+            {
+                "name": "新拟态效果生成器",
+                "description": "在线调节生成新拟态效果，自动生成CSS",
+                "url": "https://neumorphism.io/#e0e0e0",
+                "image": "./images/site/neumorphism.png"
             }
         ]
     },
