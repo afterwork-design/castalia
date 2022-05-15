@@ -44,6 +44,12 @@
                 "description": "类型丰富的图标库",
                 "url": "https://www.iconfinder.com",
                 "image": "./images/site/iconfinder.jpg"
+            },
+            {
+                "name": "Emoji XD",
+                "description": "线上Emoji百科全书，支持关键词搜索",
+                "url": "https://emojixd.com",
+                "image": "./images/site/emojixd.jpg"
             }
         ]
     },
@@ -62,6 +68,12 @@
                 "description": "色彩鲜明的插画，还可以在figma和sketch中安装插件",
                 "url": "https://blush.design/zh-CN",
                 "image": "./images/site/blush.jpg"
+            },
+            {
+                "name": "Free Illustrations",
+                "description": "一个免费的高质量矢量插画资源",
+                "url": "https://sketchvalley.com/",
+                "image": "./images/site/sv.jpg"
             },
             {
                 "name": "Illustrationx",
@@ -198,6 +210,36 @@
         ]
     },
     {
+        "name": "阅读",
+        "icon": "./images/menu/book.svg",
+        "site": [
+            {
+                "name": "Medium",
+                "description": "国外的优质博客平台",
+                "url": "https://medium.com",
+                "image": "./images/site/medium.jpg"
+            },
+            {
+                "name": "SaltTiger",
+                "description": "每天一本编程书，每天进步一点点",
+                "url": "https://salttiger.com",
+                "image": "./castalia-s.png"
+            },
+            {
+                "name": "微信读书",
+                "description": "支持多平台的免费读书软件",
+                "url": "https://weread.qq.com",
+                "image": "./images/site/weread.png"
+            },
+            {
+                "name": "NN Group",
+                "description": "传播专业的用户体验知识",
+                "url": "https://www.nngroup.com",
+                "image": "./images/site/nng.jpg"
+            }
+        ]
+    },
+    {
         "name": "工具",
         "icon": "./images/menu/tool.svg",
         "site": [
@@ -238,18 +280,6 @@
                 "image": "./images/site/weavesilk.jpg"
             },
             {
-                "name": "YASAI",
-                "description": "用P5.js做的小工具合集",
-                "url": "https://wangyasai.github.io/designtools.html",
-                "image": "./images/site/yasai.jpg"
-            },
-            {
-                "name": "Emoji XD",
-                "description": "线上Emoji百科全书，支持关键词搜索",
-                "url": "https://emojixd.com",
-                "image": "./images/site/emojixd.jpg"
-            },
-            {
                 "name": "CodePen",
                 "description": "在线代码编辑器和学习环境，包含许多 Web 设计相关资源",
                 "url": "https://codepen.io",
@@ -266,18 +296,36 @@
                 "description": "支持多种数据格式，包括 json、svg 等，区域最小可拆分至区县",
                 "url": "https://datav.aliyun.com/portal/school/atlas/area_selector",
                 "image": "./images/site/datav.png"
-            },
+            }
+        ]
+    },
+    {
+        "name": "网页设计",
+        "icon": "./images/menu/web-design.svg",
+        "site": [
             {
-                "name": "磨砂玻璃效果生成器",
+                "name": "Glassmorphism Generator",
                 "description": "在线调节生成磨砂玻璃效果，可直接复制CSS",
                 "url": "https://hype4.academy/tools/glassmorphism-generator",
                 "image": "./images/site/glassmorphism.png"
             },
             {
-                "name": "新拟态效果生成器",
+                "name": "Neumorphism",
                 "description": "在线调节生成新拟态效果，自动生成CSS",
                 "url": "https://neumorphism.io/#e0e0e0",
                 "image": "./images/site/neumorphism.png"
+            },
+            {
+                "name": "Animate CSS",
+                "description": "一个开源的 css 动画库",
+                "url": "https://animate.style/",
+                "image": "./images/site/animate-css.jpg"
+            },
+            {
+                "name": "Uiverse",
+                "description": "按钮样式库，也包含复选框、开关、卡片等样式",
+                "url": "https://uiverse.io/",
+                "image": "./images/site/uiverse.jpg"
             }
         ]
     },
@@ -314,36 +362,6 @@
                 "description": "设计师",
                 "url": "https://tangweijuan.com",
                 "image": "./images/site/tangweijuan.jpg"
-            }
-        ]
-    },
-    {
-        "name": "阅读",
-        "icon": "./images/menu/book.svg",
-        "site": [
-            {
-                "name": "Medium",
-                "description": "国外的优质博客平台",
-                "url": "https://medium.com",
-                "image": "./images/site/medium.jpg"
-            },
-            {
-                "name": "SaltTiger",
-                "description": "每天一本编程书，每天进步一点点",
-                "url": "https://salttiger.com",
-                "image": "./castalia-s.png"
-            },
-            {
-                "name": "微信读书",
-                "description": "支持多平台的免费读书软件",
-                "url": "https://weread.qq.com",
-                "image": "./images/site/weread.png"
-            },
-            {
-                "name": "NN Group",
-                "description": "专业的用户体验知识",
-                "url": "https://www.nngroup.com",
-                "image": "./images/site/nng.jpg"
             }
         ]
     },
