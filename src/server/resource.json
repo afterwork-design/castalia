@@ -131,9 +131,75 @@
             },
             {
                 "name": "Color Claim",
-                "description": "漂亮的色彩网站",
+                "description": "颜值很高的色彩网站",
                 "url": "https://vanschneider.com/colors",
                 "image": "./images/site/color-claim.jpg"
+            },
+            {
+                "name": "Picular",
+                "description": "可通过关键词搜索对应配色",
+                "url": "https://picular.co/",
+                "image": "./images/site/picular.png"
+            },
+            {
+                "name": "Grabient",
+                "description": "渐变色网站，支持在每组渐变色上调节色值、颜色位置、渐变角度和添加颜色",
+                "url": "https://www.grabient.com/",
+                "image": "./images/site/grabient.png"
+            },
+            {
+                "name": "CoolHue",
+                "description": "一个漂亮的渐变色网站",
+                "url": "https://webkul.github.io/coolhue/",
+                "image": "./images/site/coolhue.png"
+            },
+            {
+                "name": "ColorSpace",
+                "description": "功能强大的配色网站，输入一个颜色，自动生成不同应用场景的配色",
+                "url": "https://mycolor.space/",
+                "image": "./images/site/colorspace.png"
+            },
+            {
+                "name": "BrandColors",
+                "description": "各大公司品牌色",
+                "url": "https://brandcolors.net/",
+                "image": "./images/site/brandcolors.png"
+            },
+            {
+                "name": "Mesh Gradients",
+                "description": "不规则渐变",
+                "url": "https://products.ls.graphics/mesh-gradients/",
+                "image": "./images/site/mesh-gradients.png"
+            },
+            {
+                "name": "Flatcolorpicker",
+                "description": "按色系分类的颜色，支持多种色彩模式",
+                "url": "https://www.flatuicolorpicker.com/",
+                "image": "./images/site/flatuicolorpicker.png"
+            },
+            {
+                "name": "Open Color",
+                "description": "13个色系，每种色系分10个明度",
+                "url": "https://yeun.github.io/open-color/",
+                "image": "./images/site/opencolor.png"
+            },
+            {
+                "name": "ColorBox",
+                "description": "自动生成色彩梯度",
+                "url": "https://colorbox.io/",
+                "image": "./images/site/colorbox.png"
+            },
+            {
+                "name": "Color Leap",
+                "description": "复古配色网站",
+                "url": "https://colorleap.app/home",
+                "image": "./images/site/colorleap.png"
+            },
+            {
+                "name": "KaKa",
+                "description": "包含四色色板与渐变色",
+                "url": "https://afterwork-design.github.io/color-card/",
+                "image": "./images/site/kaka.png"
             }
         ]
     },
