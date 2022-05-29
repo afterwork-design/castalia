@@ -102,8 +102,8 @@ const ResourceCard: React.FC<Props> = ({
                         <img
                             src={site.image}
                             alt={site.name}
-                            width={50}
-                            height={50}
+                            width={40}
+                            height={40}
                             loading="lazy"
                         />
                     </Box>
