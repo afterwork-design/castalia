@@ -197,7 +197,7 @@
             },
             {
                 "name": "KaKa",
-                "description": "包含四色色板与渐变色",
+                "description": "四色色板、渐变色、阶梯色",
                 "url": "https://afterwork-design.github.io/color-card/",
                 "image": "./images/site/kaka.png"
             }
@@ -263,13 +263,13 @@
             },
             {
                 "name": "Streetwill",
-                "description": "公共领域",
+                "description": "免费高质量优质图片",
                 "url": "http://streetwill.co",
                 "image": "./images/site/streetwill.png"
             },
             {
                 "name": "ISO",
-                "description": "公共领域，可商用",
+                "description": "数以千计的免费高分辨率 Stock CC0 图片和视频",
                 "url": "https://isorepublic.com/",
                 "image": "./images/site/iso.png"
             }
@@ -362,6 +362,12 @@
                 "description": "支持多种数据格式，包括 json、svg 等，区域最小可拆分至区县",
                 "url": "https://datav.aliyun.com/portal/school/atlas/area_selector",
                 "image": "./images/site/datav.png"
+            },
+            {
+                "name": "Excalidraw",
+                "description": "手绘风格的在线白板工具",
+                "url": "https://excalidraw.com/",
+                "image": "./images/site/excalidraw.png"
             }
         ]
     },
