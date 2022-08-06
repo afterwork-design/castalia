@@ -368,7 +368,14 @@
                 "description": "手绘风格的在线白板工具",
                 "url": "https://excalidraw.com/",
                 "image": "./images/site/excalidraw.png"
+            },
+            {
+                "name": "Magic Eraser",
+                "description": "快速消除图片中杂物的在线工具",
+                "url": "https://www.magiceraser.io/",
+                "image": "./images/site/magiceraser.png"
             }
+            
         ]
     },
     {
@@ -398,6 +405,12 @@
                 "description": "按钮样式库，也包含复选框、开关、卡片等样式",
                 "url": "https://uiverse.io/",
                 "image": "./images/site/uiverse.jpg"
+            },
+            {
+                "name": "useAnimations",
+                "description": "图标按钮动效",
+                "url": "https://useanimations.com/index.html#explore",
+                "image": "./images/site/useanimations.png"
             }
         ]
     },
