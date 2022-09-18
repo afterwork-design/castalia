@@ -391,6 +391,72 @@
         ]
     },
     {
+        "name": "英语学习",
+        "icon": "./images/menu/english.svg",
+        "site": [
+			{
+                "name": "BBC Learning English",
+                "description": "BBC 为世界各地的学习者提供免费的音频、视频和文本材料",
+                "url": "https://www.bbc.co.uk/learningenglish",
+                "image": "./images/site/bbc.png"
+            },
+            {
+                "name": "VOA Learning English",
+                "description": "美国之音 VOA 为全球数百万英语学习者提供的多媒体新闻和信息来源",
+                "url": "https://learningenglish.voanews.com",
+                "image": "./images/site/voa.png"
+            },
+            {
+                "name": "SpeechAce",
+                "description": "口语学习网站",
+                "url": "https://www.vocabulary.com",
+                "image": "./images/site/speechace.png"
+            },
+            {
+                "name": "Vocabulary",
+                "description": "词汇学习网站",
+                "url": "https://www.vocabulary.com",
+                "image": "./images/site/vocabulary.png"
+            },
+            {
+                "name": "English Vocabulary Test",
+                "description": "词汇量测试网站",
+                "url": "https://preply.com/en/learn/english/test-your-vocab",
+                "image": "./images/site/preply.png"
+            },
+            {
+                "name": "QuillBot",
+                "description": "写作辅助",
+                "url": "https://quillbot.com",
+                "image": "./images/site/quillbot.png"
+            },
+            {
+                "name": "Grammarly",
+                "description": "写作辅助",
+                "url": "https://www.grammarly.com",
+                "image": "./images/site/grammarly.png"
+            },
+            {
+                "name": "ESLnotes",
+                "description": "英语学习者电影指南",
+                "url": "https://www.eslnotes.com",
+                "image": "./images/site/eslnotes.png"
+            },
+            {
+                "name": "DeepL",
+                "description": "翻译器",
+                "url": "https://www.deepl.com/translator",
+                "image": "./images/site/deepl.png"
+            },
+            {
+                "name": "Online Etymology Dictionary",
+                "description": "在线词源词典",
+                "url": "https://www.etymonline.com",
+                "image": "./images/site/etymonline.png"
+            }
+        ]
+    },
+    {
         "name": "网页设计",
         "icon": "./images/menu/web-design.svg",
         "site": [
