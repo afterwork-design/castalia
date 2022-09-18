@@ -50,6 +50,12 @@
                 "description": "线上Emoji百科全书，支持关键词搜索",
                 "url": "https://emojixd.com",
                 "image": "./images/site/emojixd.jpg"
+            },
+            {
+                "name": "seeklogo",
+                "description": "500000+ 个品牌 logo 图片，包含 png 和矢量格式",
+                "url": "https://seeklogo.com",
+                "image": "./images/site/seeklogo.png"
             }
         ]
     },
@@ -204,7 +210,7 @@
         ]
     },
     {
-        "name": "图片",
+        "name": "图片视频",
         "icon": "./images/menu/picture.svg",
         "site": [
             {
@@ -272,6 +278,12 @@
                 "description": "数以千计的免费高分辨率 Stock CC0 图片和视频",
                 "url": "https://isorepublic.com/",
                 "image": "./images/site/iso.png"
+            },
+            {
+                "name": "PR模板网",
+                "description": "一个专注Premiere剪辑视频制作模板素材等资源下载网站",
+                "url": "https://prmuban.com",
+                "image": "./images/site/premiere.png"
             }
         ]
     },
