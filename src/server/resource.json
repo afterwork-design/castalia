@@ -71,13 +71,13 @@
             },
             {
                 "name": "Blush",
-                "description": "色彩鲜明的插画，还可以在figma和sketch中安装插件",
+                "description": "色彩鲜明的插画，有 figma 和 sketch 插件",
                 "url": "https://blush.design/zh-CN",
                 "image": "./images/site/blush.jpg"
             },
             {
                 "name": "Free Illustrations",
-                "description": "一个免费的高质量矢量插画资源",
+                "description": "免费高质量矢量插画资源",
                 "url": "https://sketchvalley.com/",
                 "image": "./images/site/sv.jpg"
             },
@@ -89,7 +89,7 @@
             },
             {
                 "name": "Folio",
-                "description": "一家插画机构，包含从崭露头角的艺术家到行业偶像的作品",
+                "description": "插画机构，包含从崭露头角的艺术家到行业偶像的作品",
                 "url": "https://folioart.co.uk",
                 "image": "./images/site/folioart.jpg"
             },
@@ -155,7 +155,7 @@
             },
             {
                 "name": "CoolHue",
-                "description": "一个漂亮的渐变色网站",
+                "description": "漂亮的渐变色网站",
                 "url": "https://webkul.github.io/coolhue/",
                 "image": "./images/site/coolhue.png"
             },
@@ -281,7 +281,7 @@
             },
             {
                 "name": "PR模板网",
-                "description": "一个专注Premiere剪辑视频制作模板素材等资源下载网站",
+                "description": "Premiere 模板素材等资源下载网站",
                 "url": "https://prmuban.com",
                 "image": "./images/site/premiere.png"
             }
@@ -314,6 +314,18 @@
                 "description": "传播专业的用户体验知识",
                 "url": "https://www.nngroup.com",
                 "image": "./images/site/nng.jpg"
+            },
+            {
+                "name": "Sidebar",
+                "description": "每日更新最佳设计链接",
+                "url": "https://sidebar.io",
+                "image": "./images/site/sidebar.png"
+            },
+            {
+                "name": "Panda",
+                "description": "资讯合集",
+                "url": "https://app.usepanda.com/#/",
+                "image": "./images/site/panda.png"
             }
         ]
     },
@@ -386,8 +398,31 @@
                 "description": "快速消除图片中杂物的在线工具",
                 "url": "https://www.magiceraser.io/",
                 "image": "./images/site/magiceraser.png"
+            },
+            {
+                "name": "Screen Guru",
+                "description": "在线截图美化工具，输入 URL, 生成干净的浏览器模型",
+                "url": "https://screen.guru",
+                "image": "./images/site/screen-guru.png"
+            },
+            {
+                "name": "FabPic",
+                "description": "在线截图美化工具",
+                "url": "https://www.fabpic.app",
+                "image": "./images/site/fabpic.png"
+            },
+            {
+                "name": "Screenzy",
+                "description": "在线截图美化工具，支持 URL、本地图片和随机的 Unsplash 图片",
+                "url": "https://screenzy.io/#",
+                "image": "./images/site/screenzy.png"
+            },
+            {
+                "name": "Screely",
+                "description": "将截图生成浏览器模型",
+                "url": "https://www.screely.com/",
+                "image": "./images/site/screely.png"
             }
-            
         ]
     },
     {
@@ -564,7 +599,7 @@
             },
             {
                 "name": "Element Plus",
-                "description": "基于 Vue 3，面向设计师和开发者的组件库",
+                "description": "基于 Vue 3, 面向设计师和开发者的组件库",
                 "url": "https://element-plus.org/zh-CN",
                 "image": "./images/site/element-plus.jpg"
             },
