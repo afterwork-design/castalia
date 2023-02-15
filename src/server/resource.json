@@ -56,6 +56,12 @@
                 "description": "500000+ 个品牌 logo 图片，包含 png 和矢量格式",
                 "url": "https://seeklogo.com",
                 "image": "./images/site/seeklogo.png"
+            },
+            {
+                "name": "Lordicon",
+                "description": "动画图标库",
+                "url": "https://lordicon.com/",
+                "image": "./images/site/lordicon.png"
             }
         ]
     },
@@ -104,6 +110,12 @@
                 "description": "有趣的404插画",
                 "url": "https://www.kapwing.com/404-illustrations",
                 "image": "./images/site/404-illustrations.jpg"
+            },
+            {
+                "name": "Pixilart",
+                "description": "在线像素插画艺术平台",
+                "url": "https://www.pixilart.com/",
+                "image": "./images/site/pixilart.jpg"
             }
         ]
     },
@@ -326,6 +338,18 @@
                 "description": "资讯合集",
                 "url": "https://app.usepanda.com/#/",
                 "image": "./images/site/panda.png"
+            },
+            {
+                "name": "JELLY DESIGN",
+                "description": "京东零售官方设计共享平台",
+                "url": "https://jelly.jd.com/",
+                "image": "./images/site/jelly.png"
+            },
+            {
+                "name": "Tencent ISUX",
+                "description": "腾讯社交用户体验设计",
+                "url": "https://isux.tencent.com/",
+                "image": "./images/site/isux.png"
             }
         ]
     },
@@ -422,6 +446,12 @@
                 "description": "将截图生成浏览器模型",
                 "url": "https://www.screely.com/",
                 "image": "./images/site/screely.png"
+            },
+            {
+                "name": "FlowUs 息流",
+                "description": "All in One 知识管理平台",
+                "url": "https://flowus.cn/product",
+                "image": "./images/site/flowus.png"
             }
         ]
     },
@@ -524,6 +554,12 @@
                 "description": "图标按钮动效",
                 "url": "https://useanimations.com/index.html#explore",
                 "image": "./images/site/useanimations.png"
+            },
+            {
+                "name": "Defensive CSS",
+                "description": "实用的 CSS 和设计技巧",
+                "url": "https://defensivecss.dev/",
+                "image": "./images/site/defensivecss.png"
             }
         ]
     },
