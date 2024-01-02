@@ -45,6 +45,18 @@
                 "url": "https://www.iconfinder.com",
                 "image": "./images/site/iconfinder.jpg"
             },
+	    {
+                "name": "Iconoir",
+                "description": "免费，线性图标",
+                "url": "https://iconoir.com/",
+                "image": ""
+            },
+	    {
+                "name": "Tabler Icons",
+                "description": "免费，可在线调节颜色、尺寸",
+                "url": "https://tablericons.com/",
+                "image": ""
+            },
             {
                 "name": "Emoji XD",
                 "description": "线上Emoji百科全书，支持关键词搜索",
@@ -212,6 +224,12 @@
                 "description": "复古配色网站",
                 "url": "https://colorleap.app/home",
                 "image": "./images/site/colorleap.png"
+            },
+	    {
+                "name": "Color.review",
+                "description": "检查颜色对比度是否符合要求",
+                "url": "https://color.review/",
+                "image": ""
             },
             {
                 "name": "KaKa",
