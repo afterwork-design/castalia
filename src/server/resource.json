@@ -686,6 +686,12 @@
                 "description": "鸿蒙设计规范",
                 "url": "https://developer.harmonyos.com/cn/design",
                 "image": "./images/site/harmonyos.jpg"
+            },
+            {
+                "name": "BrandGuidlines",
+                "description": "真实丰富的品牌指南",
+                "url": "https://www.brandguidelines.net",
+                "image": "./images/site/brandguidelines.png"
             }
         ]
     }
