@@ -70,6 +70,12 @@
                 "image": "./images/site/seeklogo.png"
             },
             {
+                "name": "macOS Icon Gallery",
+                "description": "Mac 应用图标库",
+                "url": "https://www.macosicongallery.com/",
+                "image": "./images/site/icon-gallery.png"
+            },
+            {
                 "name": "Lordicon",
                 "description": "动画图标库",
                 "url": "https://lordicon.com/",
