@@ -49,7 +49,7 @@
                 "name": "Iconoir",
                 "description": "免费，线性图标",
                 "url": "https://iconoir.com/",
-                "image": ""
+                "image": "./images/site/iconoir.svg"
             },
 	    {
                 "name": "Tabler Icons",
