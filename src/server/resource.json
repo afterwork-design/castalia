@@ -69,6 +69,42 @@
                 "url": "https://seeklogo.com",
                 "image": "./images/site/seeklogo.png"
             },
+	    {
+                "name": "LOGONEWS",
+                "description": "专注LOGO新闻和品牌设计咨询报道",
+                "url": "https://www.logonews.cn",
+                "image": "./images/site/logonews.svg"
+            },
+	    {
+                "name": "Logo Design Love",
+                "description": "关于LOGO设计的资料、书籍",
+                "url": "https://www.logodesignlove.com",
+                "image": "./images/site/logodesignlove.svg"
+            },
+	    {
+                "name": "Branding Style Guides",
+                "description": "品牌视觉设计指南",
+                "url": "https://brandingstyleguides.com",
+                "image": "./images/site/branding-style-guides.svg"
+            },
+	    {
+                "name": "Logobook",
+                "description": "以字母、数字、形状、物体、自然、行业分类的黑白LOGO",
+                "url": "http://www.logobook.com",
+                "image": ""
+            },
+	    {
+                "name": "Fey's logo database",
+                "description": "按字母排序的LOGO资源",
+                "url": "https://www.fey.com/logos",
+                "image": ""
+            },
+	    {
+                "name": "Logoipsum",
+                "description": "多种风格的LOGO占位符",
+                "url": "https://logoipsum.com",
+                "image": "./images/site/logoipsum.svg"
+            },
             {
                 "name": "macOS Icon Gallery",
                 "description": "Mac 应用图标库",
