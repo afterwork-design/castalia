@@ -73,13 +73,13 @@
                 "name": "LOGONEWS",
                 "description": "专注LOGO新闻和品牌设计咨询报道",
                 "url": "https://www.logonews.cn",
-                "image": "./images/site/logonews.svg"
+                "image": "./images/site/logonews.png"
             },
 	    {
                 "name": "Logo Design Love",
                 "description": "关于LOGO设计的资料、书籍",
                 "url": "https://www.logodesignlove.com",
-                "image": "./images/site/logodesignlove.svg"
+                "image": "./images/site/logodesignlove.png"
             },
 	    {
                 "name": "Branding Style Guides",
