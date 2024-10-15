@@ -620,7 +620,37 @@
                 "description": "实用的 CSS 和设计技巧",
                 "url": "https://defensivecss.dev/",
                 "image": "./images/site/defensivecss.png"
-            }
+            },
+	    {
+	       "name": "Landingfolio",
+	       "description": "Landing Page 设计灵感集",
+	       "url": "https://www.landingfolio.com/",
+	       "image": "./images/site/landingfolio.svg"
+	    },
+	    {
+	       "name": "Best Design Portfolio",
+	       "description": "设计作品集",
+	       "url": "https://pafolios.com/",
+	       "image": "./images/site/pafolios.svg"
+	    },
+	    {
+	       "name": "Framer Marketplace",
+	       "description": "来自 Framer 社区的最佳网站设计资源",
+	       "url": "https://www.framer.com/marketplace/",
+	       "image": "./images/site/framer.svg"
+	    },
+	    {
+	       "name": "CallToInspiration",
+	       "description": "UI/UX 设计资源",
+	       "url": "https://calltoinspiration.com/",
+	       "image": "./images/site/calltoinspiration.png"
+	    },
+	    {
+	       "name": "美叶",
+	       "description": "UI、插画、运营、字体、标志、截屏、咒语灵感集",
+	       "url": "https://www.meiye.art/",
+	       "image": "./images/site/meiye.svg"
+	    }
         ]
     },
     {
