@@ -13,7 +13,7 @@
                 "name": "Iconfont",
                 "description": "免费，中文，图标数量丰富，包含插画资源",
                 "url": "https://www.iconfont.cn",
-                "image": "./images/site/iconfont.png"
+                "image": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg"
             },
             {
                 "name": "Ikonate",
@@ -91,12 +91,6 @@
                 "name": "Logobook",
                 "description": "以字母、数字、形状、物体、自然、行业分类的黑白LOGO",
                 "url": "http://www.logobook.com",
-                "image": ""
-            },
-	    {
-                "name": "Fey's logo database",
-                "description": "按字母排序的LOGO资源",
-                "url": "https://www.fey.com/logos",
                 "image": ""
             },
 	    {
@@ -410,6 +404,54 @@
                 "description": "腾讯社交用户体验设计",
                 "url": "https://isux.tencent.com/",
                 "image": "./images/site/isux.png"
+            },
+            {
+                "name": "A11Y Collective",
+                "description": "无障碍网页设计学习平台",
+                "url": "https://www.a11y-collective.com/blog/",
+                "image": "https://www.a11y-collective.com/wp-content/uploads/2020/04/A11Y-Collective-Logo.png"
+            },
+            {
+                "name": "Access * Ability",
+                "description": "关于可访问性的文章",
+                "url": "https://buttondown.com/access-ability/archive/",
+                "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzMzMzMzMyIvPgo8dGV4dCB4PSIxNiIgeT0iMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+Cjwvc3ZnPgo="
+            },
+            {
+                "name": "BlogFinder",
+                "description": "发现优秀的个人博客",
+                "url": "https://bf.zzxworld.com/",
+                "image": "https://bf.zzxworld.com/images/favicon.png"
+            },
+            {
+                "name": "MAKING SOFTWARE",
+                "description": "A reference manual for people who design and build software.",
+                "url": "https://www.makingsoftware.com/",
+                "image": "https://www.google.com/s2/favicons?domain=makingsoftware.com&sz=32"
+            },
+            {
+                "name": "People and Blogs",
+                "description": "A weekly newsletter series where interesting people talk about themselves and their blogs",
+                "url": "https://peopleandblogs.com/",
+                "image": "https://www.google.com/s2/favicons?domain=peopleandblogs.com&sz=32"
+            },
+            {
+                "name": "Project Gutenberg",
+                "description": "A library of over 75,000 free eBooks",
+                "url": "https://gutenberg.org/",
+                "image": "https://www.gutenberg.org/gutenberg/pg-logo-144x144.png"
+            },
+            {
+                "name": "Workspaces",
+                "description": "创作者的工作台，每周更新",
+                "url": "https://www.workspaces.xyz/setups",
+                "image": "https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/2624633b-671a-4aa3-928a-3c486fef0d26/6831c6bbfe90bfcea8232b18_Logo.png"
+            },
+            {
+                "name": "每日新闻联播文字版",
+                "description": "",
+                "url": "http://mrxwlb.com/",
+                "image": "https://www.google.com/s2/favicons?domain=mrxwlb.com&sz=32"
             }
         ]
     },
@@ -512,6 +554,48 @@
                 "description": "All in One 知识管理平台",
                 "url": "https://flowus.cn/product",
                 "image": "./images/site/flowus.png"
+            },
+            {
+                "name": "CSS Loaders",
+                "description": "CSS 加载动画集合，在线预览，支持直接复制 CSS",
+                "url": "https://css-loaders.com/3d/",
+                "image": "https://www.google.com/s2/favicons?domain=css-loaders.com&sz=32"
+            },
+            {
+                "name": "Behind - In Depth",
+                "description": "在线为图片添加深度文字",
+                "url": "https://behind.rudrashah.in/dashboard",
+                "image": "https://www.google.com/s2/favicons?domain=behind.rudrashah.in&sz=32"
+            },
+            {
+                "name": "SPACE TYPE GENERATOR",
+                "description": "在线文字动画排版工具",
+                "url": "https://spacetypegenerator.com/",
+                "image": "https://www.google.com/s2/favicons?domain=spacetypegenerator.com&sz=32"
+            },
+            {
+                "name": "imagesTool",
+                "description": "在线免费图像压缩器",
+                "url": "https://tiny.imagestool.com/zh-CN/",
+                "image": "https://www.google.com/s2/favicons?domain=tiny.imagestool.com&sz=32"
+            },
+            {
+                "name": "remove-bg.io",
+                "description": "在线背景移除工具，免费，下载高清图",
+                "url": "https://remove-bg.io/zh-CN",
+                "image": "https://www.google.com/s2/favicons?domain=remove-bg.io&sz=32"
+            },
+            {
+                "name": "Pixel Motion",
+                "description": "像素画在线工具",
+                "url": "https://pixel-motion.yysuni.com/",
+                "image": "https://www.google.com/s2/favicons?domain=pixel-motion.yysuni.com&sz=32"
+            },
+            {
+                "name": "Bunny's Avatar",
+                "description": "",
+                "url": "https://bunnyismoving.github.io/",
+                "image": "https://www.google.com/s2/favicons?domain=bunnyismoving.github.io&sz=32"
             }
         ]
     },
@@ -686,6 +770,12 @@
                 "description": "设计师",
                 "url": "https://tangweijuan.com",
                 "image": "./images/site/tangweijuan.jpg"
+            },
+            {
+                "name": "Ana Rodrigues",
+                "description": "A front-end developer in London",
+                "url": "https://ohhelloana.blog/",
+                "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzAwN0NGRiIvPgo8dGV4dCB4PSIxNiIgeT0iMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+Cjwvc3ZnPgo="
             }
         ]
     },
@@ -710,6 +800,48 @@
                 "description": "免费，优质模型下载",
                 "url": "https://mockups-design.com",
                 "image": "./images/site/mockups-design.jpg"
+            }
+        ]
+    },
+    {
+        "name": "字体",
+        "icon": "./images/menu/color.svg",
+        "site": [
+            {
+                "name": "DaFont",
+                "description": "字体搜集网站，主要是英文字体",
+                "url": "https://www.dafont.com/",
+                "image": "https://www.dafont.com/img/favicon.ico"
+            },
+            {
+                "name": "Font-YouWorkThem",
+                "description": "YouWorkForThem 的精选字体库，支持预览、购买、下载",
+                "url": "https://www.youworkforthem.com/fonts",
+                "image": "https://www.google.com/s2/favicons?domain=youworkforthem.com&sz=32"
+            },
+            {
+                "name": "Free Font",
+                "description": "收录商用免费字体，已收录 926 个字体",
+                "url": "https://wangchujiang.com/free-font/index.html",
+                "image": "https://www.google.com/s2/favicons?domain=wangchujiang.com&sz=32"
+            },
+            {
+                "name": "fontofthe.day",
+                "description": "每日推荐优秀英文字体",
+                "url": "https://fontofthe.day/",
+                "image": "https://www.google.com/s2/favicons?domain=fontofthe.day&sz=32"
+            },
+            {
+                "name": "字体搬运工",
+                "description": "专门收集整理免费商用字体的网站，支持下载字体",
+                "url": "https://font.sucai999.com/",
+                "image": "https://www.google.com/s2/favicons?domain=font.sucai999.com&sz=32"
+            },
+            {
+                "name": "Brutalita Sans",
+                "description": "Brutalita is an experimental font and editor.",
+                "url": "https://brutalita.com/",
+                "image": "https://www.google.com/s2/favicons?domain=brutalita.com&sz=32"
             }
         ]
     },
@@ -764,6 +896,12 @@
                 "description": "真实丰富的品牌指南",
                 "url": "https://www.brandguidelines.net",
                 "image": "./images/site/brandguidelines.png"
+            },
+            {
+                "name": "Ant Design X",
+                "description": "Ant Design 团队出的 AI 设计系统",
+                "url": "https://x.ant.design/index-cn",
+                "image": "https://mdn.alipayobjects.com/huamei_iwk9zp/afts/img/A*eco6RrQhxbMAAAAAAAAAAAAADgCCAQ/original"
             }
         ]
     }
