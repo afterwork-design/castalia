@@ -31,7 +31,7 @@
                 "name": "Iconscout",
                 "description": "精美丰富，包含很多冷门类型",
                 "url": "https://iconscout.com",
-                "image": ".https://iconscout.com/iconscout_logo-1024x1024.png"
+                "image": "https://iconscout.com/iconscout_logo-1024x1024.png"
             },
             {
                 "name": "ICONS8",
@@ -43,7 +43,7 @@
                 "name": "ICONFINDER",
                 "description": "类型丰富的图标库",
                 "url": "https://www.iconfinder.com",
-                "image": "./images/site/iconfinder.jpg"
+                "image": "https://www.iconfinder.com/static/img/favicons/favicon-194x194.png?bf2736d2f8"
             },
 	    {
                 "name": "Iconoir",
@@ -55,7 +55,7 @@
                 "name": "Tabler Icons",
                 "description": "免费，可在线调节颜色、尺寸",
                 "url": "https://tablericons.com/",
-                "image": ""
+                "image": "https://tablericons.com/favicon.svg"
             },
             {
                 "name": "Emoji XD",
@@ -73,7 +73,7 @@
                 "name": "LOGONEWS",
                 "description": "专注LOGO新闻和品牌设计咨询报道",
                 "url": "https://www.logonews.cn",
-                "image": "./images/site/logonews.png"
+                "image": "https://www.logonews.cn/favicon.ico"
             },
 	    {
                 "name": "Logo Design Love",
@@ -91,25 +91,37 @@
                 "name": "Logobook",
                 "description": "以字母、数字、形状、物体、自然、行业分类的黑白LOGO",
                 "url": "http://www.logobook.com",
-                "image": ""
+                "image": "https://logobook.com/icons/favicon.ico"
             },
 	    {
                 "name": "Logoipsum",
                 "description": "多种风格的LOGO占位符",
                 "url": "https://logoipsum.com",
-                "image": "./images/site/logoipsum.svg"
+                "image": "https://logoipsum.com/favicon.svg"
             },
             {
                 "name": "macOS Icon Gallery",
                 "description": "Mac 应用图标库",
                 "url": "https://www.macosicongallery.com/",
-                "image": "./images/site/icon-gallery.png"
+                "image": "https://www.macosicongallery.com/favicon.ico"
             },
             {
                 "name": "Lordicon",
                 "description": "动画图标库",
                 "url": "https://lordicon.com/",
-                "image": "./images/site/lordicon.png"
+                "image": "https://media.lordicon.com/assets/pictures/lordicon-mobile.svg"
+            },
+            {
+                "name": "Liquid Glass Icon",
+                "description": "AI 生成的常用软件的液态玻璃效果图标",
+                "url": "https://liquidglassicon.designstroll.space/",
+                "image": "https://liquidglassicon.designstroll.space/assets/img/favicon.png"
+            },
+            {
+                "name": "Space Exploration Logo Archive",
+                "description": "1942~2023 年的世界太空探索 logo 收藏，提供矢量图",
+                "url": "https://spaceexplorationlogoarchive.webflow.io/",
+                "image": "https://cdn.prod.website-files.com/655bb28b1ce9dc561a40d4aa/6633e7edafb490ea59d32910_Globe.svg"
             }
         ]
     },
@@ -157,7 +169,7 @@
                 "name": "404 Illustrations",
                 "description": "有趣的404插画",
                 "url": "https://www.kapwing.com/404-illustrations",
-                "image": "./images/site/404-illustrations.jpg"
+                "image": "https://cdn-useast1.kapwing.com/static/9XE-logo-small.webp"
             },
             {
                 "name": "Pixilart",
@@ -196,10 +208,10 @@
                 "image": "./images/site/webgradients.jpg"
             },
             {
-                "name": "Color Claim",
+                "name": "my mind",
                 "description": "颜值很高的色彩网站",
                 "url": "https://vanschneider.com/colors",
-                "image": "./images/site/color-claim.jpg"
+                "image": "https://static.accelerator.net/134/0.78.3/images/favicon.png"
             },
             {
                 "name": "Picular",
@@ -211,7 +223,7 @@
                 "name": "Grabient",
                 "description": "渐变色网站，支持在每组渐变色上调节色值、颜色位置、渐变角度和添加颜色",
                 "url": "https://www.grabient.com/",
-                "image": "./images/site/grabient.png"
+                "image": "https://www.grabient.com/favicon.ico"
             },
             {
                 "name": "CoolHue",
@@ -301,19 +313,19 @@
                 "name": "SplitShire",
                 "description": "免费，精美独特的图片库",
                 "url": "https://www.splitshire.com",
-                "image": "./images/site/splitshire.jpg"
+                "image": "https://www.splitshire.com/assets/images/favicon_io/apple-touch-icon.png"
             },
             {
-                "name": "StolSnap",
+                "name": "StockSnap",
                 "description": "免费，每天都更新图片",
                 "url": "https://stocksnap.io",
-                "image": "./images/site/stocksnap.jpg"
+                "image": "https://stocksnap.io/img/favicon.png.jpg"
             },
             {
                 "name": "IMGBIN",
                 "description": "免费，由设计师创建的数百万个透明 PNG 文件",
                 "url": "https://imgbin.com",
-                "image": "./images/site/imgbin.jpg"
+                "image": "https://imgbin.com/img/imgbin/icons/favicon-96x96.png"
             },
             {
                 "name": "Hippopx",
@@ -325,13 +337,13 @@
                 "name": "RESHOT",
                 "description": "免费图标、插图和照片，可商用",
                 "url": "https://www.reshot.com/",
-                "image": "./images/site/reshot.png"
+                "image": "https://www.reshot.com/build/reshot-logo--mark-f8dfafbc1cc8fbf4dfa0e2f210265735aefa6e32f883b5a1fe27fd94f84719b3.svg"
             },
             {
                 "name": "POND5",
                 "description": "公共领域，有图片，音乐，模型等数千个历史媒体文件",
                 "url": "https://www.pond5.com/public-domain",
-                "image": "./images/site/pond5.png"
+                "image": "https://www.pond5.com/apple-touch-favicon-120x120.png"
             },
             {
                 "name": "Streetwill",
@@ -343,13 +355,13 @@
                 "name": "ISO",
                 "description": "数以千计的免费高分辨率 Stock CC0 图片和视频",
                 "url": "https://isorepublic.com/",
-                "image": "./images/site/iso.png"
+                "image": "https://isorepublic.com/wp-content/themes/isorepublic-v4.0/assets/img/logos/iso-logo-small.svg"
             },
             {
                 "name": "PR模板网",
                 "description": "Premiere 模板素材等资源下载网站",
                 "url": "https://prmuban.com",
-                "image": "./images/site/premiere.png"
+                "image": "https://prmuban.com/newfavicon.ico"
             }
         ]
     },
@@ -373,7 +385,7 @@
                 "name": "微信读书",
                 "description": "支持多平台的免费读书软件",
                 "url": "https://weread.qq.com",
-                "image": "./images/site/weread.png"
+                "image": "https://rescdn.qqmail.com/node/wr/wrpage/style/images/independent/favicon/favicon_48h.png"
             },
             {
                 "name": "NN Group",
@@ -385,13 +397,13 @@
                 "name": "Sidebar",
                 "description": "每日更新最佳设计链接",
                 "url": "https://sidebar.io",
-                "image": "./images/site/sidebar.png"
+                "image": "https://sidebar.io/img/sidebar_favicon.svg"
             },
             {
                 "name": "Panda",
                 "description": "资讯合集",
                 "url": "https://app.usepanda.com/#/",
-                "image": "./images/site/panda.png"
+                "image": "https://usepanda.com/favicons/apple-touch-icon.png"
             },
             {
                 "name": "JELLY DESIGN",
@@ -403,7 +415,7 @@
                 "name": "Tencent ISUX",
                 "description": "腾讯社交用户体验设计",
                 "url": "https://isux.tencent.com/",
-                "image": "./images/site/isux.png"
+                "image": "https://isux.tencent.com/static/images/favicon.svg"
             },
             {
                 "name": "A11Y Collective",
@@ -433,7 +445,7 @@
                 "name": "People and Blogs",
                 "description": "A weekly newsletter series where interesting people talk about themselves and their blogs",
                 "url": "https://peopleandblogs.com/",
-                "image": "https://www.google.com/s2/favicons?domain=peopleandblogs.com&sz=32"
+                "image": "https://peopleandblogs.com/assets/favicons/favicon.ico"
             },
             {
                 "name": "Project Gutenberg",
@@ -451,7 +463,13 @@
                 "name": "每日新闻联播文字版",
                 "description": "",
                 "url": "http://mrxwlb.com/",
-                "image": "https://www.google.com/s2/favicons?domain=mrxwlb.com&sz=32"
+                "image": "http://mrxwlb.com/wp-content/uploads/2023/03/cropped-h6%E5%89%AF%E6%9C%AC-180x180.jpg"
+            },
+            {
+                "name": "Hacker News 每日播报",
+                "description": "每天自动抓取 Hacker News 热门文章，通过 AI 生成中文总结",
+                "url": "https://hacker-news.agi.li/",
+                "image": "https://hacker-news.agi.li/favicon.ico"
             }
         ]
     },
@@ -475,13 +493,13 @@
                 "name": "Canva",
                 "description": "提供优质模板，快速制作各种封面",
                 "url": "https://www.canva.cn",
-                "image": "./images/site/canva.jpg"
+                "image": "https://static.canva.cn/domain-assets/canva/static/images/favicon-1.ico"
             },
             {
                 "name": "Polarr",
                 "description": "功能强大的修图工具",
                 "url": "https://photoeditor.polarr.com",
-                "image": "./images/site/polarr.jpg"
+                "image": "https://photoeditor.polarr.com/favicon-64x64.png"
             },
             {
                 "name": "Contrast Ratio",
@@ -493,37 +511,37 @@
                 "name": "WeaveSilk",
                 "description": "在线制作酷炫背景",
                 "url": "http://weavesilk.com",
-                "image": "./images/site/weavesilk.jpg"
+                "image": "http://weavesilk.com/favicon.ico"
             },
             {
                 "name": "CodePen",
                 "description": "在线代码编辑器和学习环境，包含许多 Web 设计相关资源",
                 "url": "https://codepen.io",
-                "image": "./images/site/codepen.png"
+                "image": "https://cpwebassets.codepen.io/assets/favicon/favicon-touch-de50acbf5d634ec6791894eba4ba9cf490f709b3d742597c6fc4b734e6492a5a.png"
             },
             {
                 "name": "即时设计",
                 "description": "可实时协作的专业UI设计工具",
                 "url": "https://js.design",
-                "image": "./images/site/js-design.png"
+                "image": "https://img.js.design/assets/webImg/favicon.ico"
             },
             {
                 "name": "中国地图矢量图",
                 "description": "支持多种数据格式，包括 json、svg 等，区域最小可拆分至区县",
                 "url": "https://datav.aliyun.com/portal/school/atlas/area_selector",
-                "image": "./images/site/datav.png"
+                "image": "https://img.alicdn.com/imgextra/i4/O1CN01rl7TUG21EzHHeafjC_!!6000000006954-2-tps-64-64.png"
             },
             {
                 "name": "Excalidraw",
                 "description": "手绘风格的在线白板工具",
                 "url": "https://excalidraw.com/",
-                "image": "./images/site/excalidraw.png"
+                "image": "https://docs.excalidraw.com/img/logo.svg"
             },
             {
                 "name": "Magic Eraser",
                 "description": "快速消除图片中杂物的在线工具",
                 "url": "https://www.magiceraser.io/",
-                "image": "./images/site/magiceraser.png"
+                "image": "https://meta.magicstudio.com/assets/me-logo-mobile.svg"
             },
             {
                 "name": "Screen Guru",
@@ -541,25 +559,25 @@
                 "name": "Screenzy",
                 "description": "在线截图美化工具，支持 URL、本地图片和随机的 Unsplash 图片",
                 "url": "https://screenzy.io/#",
-                "image": "./images/site/screenzy.png"
+                "image": "https://screenzy.io/favicon.ico"
             },
             {
                 "name": "Screely",
                 "description": "将截图生成浏览器模型",
                 "url": "https://www.screely.com/",
-                "image": "./images/site/screely.png"
+                "image": "https://screely.com/favicon.ico"
             },
             {
                 "name": "FlowUs 息流",
                 "description": "All in One 知识管理平台",
                 "url": "https://flowus.cn/product",
-                "image": "./images/site/flowus.png"
+                "image": "https://cdn2.flowus.cn/public%2Fd7093e36-a117-4f47-b48a-311c21471871%2Flogo.svg?"
             },
             {
                 "name": "CSS Loaders",
                 "description": "CSS 加载动画集合，在线预览，支持直接复制 CSS",
                 "url": "https://css-loaders.com/3d/",
-                "image": "https://www.google.com/s2/favicons?domain=css-loaders.com&sz=32"
+                "image": "https://css-loaders.com/fav.png"
             },
             {
                 "name": "SPACE TYPE GENERATOR",
@@ -581,9 +599,15 @@
             },
             {
                 "name": "Bunny's Avatar",
-                "description": "",
+                "description": "卡通兔子头像编辑器",
                 "url": "https://bunnyismoving.github.io/",
                 "image": "https://bunnyismoving.github.io/favicon.ico"
+            },
+            {
+                "name": "Mixboard",
+                "description": "Google 的 AI 白板工具",
+                "url": "https://labs.google.com/mixboard/projects",
+                "image": "https://www.gstatic.com/canvas/mixboard_favicon_32x32.png"
             }
         ]
     },
@@ -601,19 +625,19 @@
                 "name": "VOA Learning English",
                 "description": "美国之音 VOA 为全球数百万英语学习者提供的多媒体新闻和信息来源",
                 "url": "https://learningenglish.voanews.com",
-                "image": "./images/site/voa.png"
+                "image": "https://learningenglish.voanews.com/Content/responsive/VOA/img/webApp/favicon.svg"
             },
             {
                 "name": "SpeechAce",
                 "description": "口语学习网站",
-                "url": "https://www.vocabulary.com",
+                "url": "https://www.speechace.com",
                 "image": "./images/site/speechace.png"
             },
             {
                 "name": "Vocabulary",
                 "description": "词汇学习网站",
                 "url": "https://www.vocabulary.com",
-                "image": "./images/site/vocabulary.png"
+                "image": "https://cdn.vocabulary.com/images/footer/logo-vocab-green-check-for-ftr-4lic3k.svg"
             },
             {
                 "name": "English Vocabulary Test",
@@ -625,13 +649,13 @@
                 "name": "QuillBot",
                 "description": "写作辅助",
                 "url": "https://quillbot.com",
-                "image": "./images/site/quillbot.png"
+                "image": "https://quillbot.com/favicon-144x144.png"
             },
             {
                 "name": "Grammarly",
                 "description": "写作辅助",
                 "url": "https://www.grammarly.com",
-                "image": "./images/site/grammarly.png"
+                "image": "https://static-web.grammarly.com/cms/master/public/favicon.ico"
             },
             {
                 "name": "ESLnotes",
@@ -643,7 +667,7 @@
                 "name": "DeepL",
                 "description": "翻译器",
                 "url": "https://www.deepl.com/translator",
-                "image": "./images/site/deepl.png"
+                "image": "https://www.deepl.com/img/favicon/favicon_96.png"
             },
             {
                 "name": "Online Etymology Dictionary",
@@ -661,13 +685,13 @@
                 "name": "Glassmorphism Generator",
                 "description": "在线调节生成磨砂玻璃效果，可直接复制CSS",
                 "url": "https://hype4.academy/tools/glassmorphism-generator",
-                "image": "./images/site/glassmorphism.png"
+                "image": "https://hype4.academy/_next/static/media/logo.b6977cf7.svg"
             },
             {
                 "name": "Neumorphism",
                 "description": "在线调节生成新拟态效果，自动生成CSS",
                 "url": "https://neumorphism.io/#e0e0e0",
-                "image": "./images/site/neumorphism.png"
+                "image": "https://neumorphism.io/apple-touch-icon.png"
             },
             {
                 "name": "Animate CSS",
@@ -679,13 +703,13 @@
                 "name": "Uiverse",
                 "description": "按钮样式库，也包含复选框、开关、卡片等样式",
                 "url": "https://uiverse.io/",
-                "image": "./images/site/uiverse.jpg"
+                "image": "https://uiverse.io/favicon-32x32.png"
             },
             {
                 "name": "useAnimations",
                 "description": "图标按钮动效",
                 "url": "https://useanimations.com/index.html#explore",
-                "image": "./images/site/useanimations.png"
+                "image": "https://useanimations.com/images/safari-pinned-tab.svg"
             },
             {
                 "name": "Defensive CSS",
@@ -700,7 +724,7 @@
 	       "image": "./images/site/landingfolio.svg"
 	    },
 	    {
-	       "name": "Best Design Portfolio",
+	       "name": "Pafolios",
 	       "description": "设计作品集",
 	       "url": "https://pafolios.com/",
 	       "image": "./images/site/pafolios.svg"
@@ -715,11 +739,11 @@
 	       "name": "CallToInspiration",
 	       "description": "UI/UX 设计资源",
 	       "url": "https://calltoinspiration.com/",
-	       "image": "./images/site/calltoinspiration.png"
+	       "image": "https://calltoinspiration.com/favicon.ico"
 	    },
 	    {
 	       "name": "美叶",
-	       "description": "UI、插画、运营、字体、标志、截屏、咒语灵感集",
+	       "description": "UI、插画、运营、字体、标志、截屏、灵感集",
 	       "url": "https://www.meiye.art/",
 	       "image": "./images/site/meiye.svg"
 	    }
@@ -733,7 +757,7 @@
                 "name": "Itsacat",
                 "description": "葡萄牙插画师，擅长处理图形和色彩，制作有趣动画",
                 "url": "https://itsacatstudio.com",
-                "image": "./images/site/itsacats.jpg"
+                "image": "https://freight.cargo.site/t/original/i/A1862687810198989259755619655212/Pin.ico"
             },
             {
                 "name": "Pengfei Wang",
@@ -745,7 +769,7 @@
                 "name": "Alice Lee",
                 "description": "独立插画师",
                 "url": "https://www.byalicelee.com",
-                "image": "./images/site/alice-lee.jpg"
+                "image": "https://cdn.prod.website-files.com/5bc8ec0a2f93635b4cb3d3cb/5c08553cb2a25478ca6b97b5_Logo_256.png"
             },
             {
                 "name": "Chloe Takahashi",
@@ -764,6 +788,12 @@
                 "description": "A front-end developer in London",
                 "url": "https://ohhelloana.blog/",
                 "image": "https://ohhelloana.blog/assets/icons/favicon-32x32.png"
+            },
+            {
+                "name": "The Oatmeal",
+                "description": "Cartoonist, Matthew Inman",
+                "url": "https://theoatmeal.com/",
+                "image": "https://s3.amazonaws.com/theoatmeal-img/default/header_2023/oatmeal_logo_2023.png"
             }
         ]
     },
@@ -775,19 +805,19 @@
                 "name": "c.mockup",
                 "description": "用于场景创建的模型系统",
                 "url": "https://mockup.ceacle.com",
-                "image": "./images/site/cmockup.jpg"
+                "image": "https://mockup.ceacle.com/icons/safari-pinned-tab.svg?v=4"
             },
             {
                 "name": "MockuPhone",
-                "description": "免费，在线生成纯白背景模型效果",
+                "description": "免费，在线生成纯白背景设备模型",
                 "url": "https://mockuphone.com",
-                "image": "./images/site/mockuphone.jpg"
+                "image": "https://mockuphone.com/images/favicon.png"
             },
             {
                 "name": "Mockups Design",
                 "description": "免费，优质模型下载",
                 "url": "https://mockups-design.com",
-                "image": "./images/site/mockups-design.jpg"
+                "image": "https://mockups-design-com.b-cdn.net/wp-content/uploads/2017/08/cropped-favicon-192x192.png"
             }
         ]
     },
@@ -847,24 +877,24 @@
                 "name": "Element Plus",
                 "description": "基于 Vue 3, 面向设计师和开发者的组件库",
                 "url": "https://element-plus.org/zh-CN",
-                "image": "./images/site/element-plus.jpg"
+                "image": "https://element-plus.org/images/element-plus-logo-small.svg"
             },
             {
                 "name": "Figma Design Systems",
                 "description": "Figma 设计体系",
                 "url": "https://www.designsystems.com",
-                "image": "./images/site/figma-design-systems.jpg"
+                "image": "https://www.designsystems.com/favicon-32x32.png?v=2"
             },
             {
                 "name": "Material Design",
                 "description": "谷歌设计规范",
                 "url": "https://material.io/design",
-                "image": "./images/site/material-design.jpg"
+                "image": "https://m3.material.io/static/assets/m3-favicon.svg"
             },
             {
                 "name": "Fluent Design System",
                 "description": "微软设计规范",
-                "url": "https://www.microsoft.com/design/fluent/#",
+                "url": "https://fluent2.microsoft.design/",
                 "image": "./images/site/fluent.jpg"
             },
             {
@@ -883,7 +913,7 @@
                 "name": "BrandGuidlines",
                 "description": "真实丰富的品牌指南",
                 "url": "https://www.brandguidelines.net",
-                "image": "./images/site/brandguidelines.png"
+                "image": "https://framerusercontent.com/images/f4xMOyU2UefHMWppK1tYDOPRYA.png"
             },
             {
                 "name": "Ant Design X",
