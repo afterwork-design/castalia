@@ -603,6 +603,12 @@
                 "url": "https://bunnyismoving.github.io/",
                 "image": "https://bunnyismoving.github.io/favicon.ico"
             },
+			{
+                "name": "Handdraw",
+                "description": "中文友好的手写效果白板",
+                "url": "https://handraw.top/",
+                "image": "https://handraw.top/favicon.ico"
+            },
             {
                 "name": "Mixboard",
                 "description": "Google 的 AI 白板工具",
@@ -854,6 +860,12 @@
                 "description": "专门收集整理免费商用字体的网站，支持下载字体",
                 "url": "https://font.sucai999.com/",
                 "image": "https://www.google.com/s2/favicons?domain=font.sucai999.com&sz=32"
+            },
+			{
+                "name": "Best Free Fonts",
+                "description": "简洁、实用，英文字体集合网站",
+                "url": "https://bestfreefonts.com/",
+                "image": "https://bestfreefonts.com/favicon.ico"
             },
             {
                 "name": "Brutalita Sans",
