@@ -169,7 +169,7 @@
                 "name": "404 Illustrations",
                 "description": "有趣的404插画",
                 "url": "https://www.kapwing.com/404-illustrations",
-                "image": "https://cdn-useast1.kapwing.com/static/9XE-logo-small.webp"
+                "image": ""
             },
             {
                 "name": "Pixilart",
@@ -319,7 +319,7 @@
                 "name": "StockSnap",
                 "description": "免费，每天都更新图片",
                 "url": "https://stocksnap.io",
-                "image": "https://stocksnap.io/img/favicon.png.jpg"
+                "image": "https://stocksnap.io/img/favicon.png"
             },
             {
                 "name": "IMGBIN",
@@ -343,7 +343,7 @@
                 "name": "POND5",
                 "description": "公共领域，有图片，音乐，模型等数千个历史媒体文件",
                 "url": "https://www.pond5.com/public-domain",
-                "image": "https://www.pond5.com/apple-touch-favicon-120x120.png"
+                "image": "https://www.pond5.com/favicon-96x96.png"
             },
             {
                 "name": "Streetwill",
@@ -463,7 +463,7 @@
                 "name": "每日新闻联播文字版",
                 "description": "",
                 "url": "http://mrxwlb.com/",
-                "image": "http://mrxwlb.com/wp-content/uploads/2023/03/cropped-h6%E5%89%AF%E6%9C%AC-180x180.jpg"
+                "image": ""
             },
             {
                 "name": "Hacker News 每日播报",
@@ -511,7 +511,7 @@
                 "name": "WeaveSilk",
                 "description": "在线制作酷炫背景",
                 "url": "http://weavesilk.com",
-                "image": "http://weavesilk.com/favicon.ico"
+                "image": ""
             },
             {
                 "name": "CodePen",
@@ -541,7 +541,7 @@
                 "name": "Magic Eraser",
                 "description": "快速消除图片中杂物的在线工具",
                 "url": "https://www.magiceraser.io/",
-                "image": "https://meta.magicstudio.com/assets/me-logo-mobile.svg"
+                "image": "https://magicstudio.com/apple-touch-icon.png"
             },
             {
                 "name": "Screen Guru",
