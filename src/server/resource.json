@@ -122,6 +122,12 @@
                 "description": "1942~2023 年的世界太空探索 logo 收藏，提供矢量图",
                 "url": "https://spaceexplorationlogoarchive.webflow.io/",
                 "image": "https://cdn.prod.website-files.com/655bb28b1ce9dc561a40d4aa/6633e7edafb490ea59d32910_Globe.svg"
+            },
+            {
+                "name": "Lucide",
+                "url": "https://lucide.dev/",
+                "description": "开源图标库，简约，一致，线性风格",
+                "image": "https://lucide.dev/logo.light.svg"
             }
         ]
     },
@@ -614,6 +620,30 @@
                 "description": "Google 的 AI 白板工具",
                 "url": "https://labs.google.com/mixboard/projects",
                 "image": "https://www.gstatic.com/canvas/mixboard_favicon_32x32.png"
+            },
+            {
+                "name": "Chromatic",
+                "url": "https://feyder.co/projects/chromatic/",
+                "description": "色块拼图游戏",
+                "image": "https://feyder.co/projects/chromatic/favicon.png"
+            },
+            {
+               "name": "Color Palette Pro",
+               "url": "https://colorpalette.pro/",
+               "description": "UI 设计得很精致，且功能强大的调色板工具",
+               "image": ""
+            },
+            {
+               "name": "Notebook Grid",
+               "url": "https://gaming-diary-50542254.figma.site/",
+               "description": "在线网格纸生成器",
+               "image": ""
+            },
+            {
+              "name": "提示词填空器",
+               "url": "https://promptfill.tanshilong.com/",
+              "description": "提示词管理工具，提供多种预设",
+              "image": "https://promptfill.tanshilong.com/Logo_icon.svg"
             }
         ]
     },
@@ -723,36 +753,36 @@
                 "url": "https://defensivecss.dev/",
                 "image": "./images/site/defensivecss.png"
             },
-	    {
-	       "name": "Landingfolio",
-	       "description": "Landing Page 设计灵感集",
-	       "url": "https://www.landingfolio.com/",
-	       "image": "./images/site/landingfolio.svg"
-	    },
-	    {
-	       "name": "Pafolios",
-	       "description": "设计作品集",
-	       "url": "https://pafolios.com/",
-	       "image": "./images/site/pafolios.svg"
-	    },
-	    {
-	       "name": "Framer Marketplace",
-	       "description": "来自 Framer 社区的最佳网站设计资源",
-	       "url": "https://www.framer.com/marketplace/",
-	       "image": "./images/site/framer.svg"
-	    },
-	    {
-	       "name": "CallToInspiration",
-	       "description": "UI/UX 设计资源",
-	       "url": "https://calltoinspiration.com/",
-	       "image": "https://calltoinspiration.com/favicon.ico"
-	    },
-	    {
-	       "name": "美叶",
-	       "description": "UI、插画、运营、字体、标志、截屏、灵感集",
-	       "url": "https://www.meiye.art/",
-	       "image": "./images/site/meiye.svg"
-	    }
+      	    {
+      	        "name": "Landingfolio",
+      	        "description": "Landing Page 设计灵感集",
+      	        "url": "https://www.landingfolio.com/",
+	            "image": "./images/site/landingfolio.svg"
+	        },
+	        {
+	            "name": "Pafolios",
+	            "description": "设计作品集",
+	            "url": "https://pafolios.com/",
+	            "image": "./images/site/pafolios.svg"
+	        },
+	        {
+	            "name": "Framer Marketplace",
+	            "description": "来自 Framer 社区的最佳网站设计资源",
+	            "url": "https://www.framer.com/marketplace/",
+	            "image": "./images/site/framer.svg"
+	        },
+	        {
+	            "name": "CallToInspiration",
+	            "description": "UI/UX 设计资源",
+	            "url": "https://calltoinspiration.com/",
+	            "image": "https://calltoinspiration.com/favicon.ico"
+	        },
+	        {
+	            "name": "美叶",
+	            "description": "UI、插画、运营、字体、标志、截屏、灵感集",
+	            "url": "https://www.meiye.art/",
+	            "image": "./images/site/meiye.svg"
+	        }
         ]
     },
     {
@@ -800,6 +830,30 @@
                 "description": "Cartoonist, Matthew Inman",
                 "url": "https://theoatmeal.com/",
                 "image": "https://s3.amazonaws.com/theoatmeal-img/default/header_2023/oatmeal_logo_2023.png"
+            },
+            {
+                "name": "Clare Lewis",
+                "url": "https://clarelewisillustration.co.uk/",
+                "description": "插画师、图案设计师",
+                "image": "https://clarelewisillustration.co.uk/wp-content/uploads/Clare-Lewis-Favicon-2022.webp"
+            },
+            {
+                "name": "Markilus",
+                "url": "https://www.markilus.com/",
+                "description": "自由插画师&漫画家 Markilus 的作品集网站",
+                "image": "https://www.markilus.com/wp-content/uploads/2025/10/cropped-favicon_markilus_2025-192x192.png"
+            },
+            {
+                "name": "Ryan Feigenbaum",
+                "url": "https://ryanfeigenbaum.com/",
+                "description": "写关于代码、设计与哲学的文章",
+                "image": "https://ryanfeigenbaum.com/content/images/size/w256h256/2025/03/logo.png"
+            },
+            {
+              "name": "notes art",
+             "url": "https://notes.art/",
+              "description": "Chris Silverman 从 2021 年开始，每天发布一张在 iPhone Notes 里画的画",
+             "image": ""
             }
         ]
     },
