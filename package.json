@@ -29,7 +29,7 @@
         "framer-motion": "^6.2.8",
         "mitt": "^3.0.0",
         "moment": "^2.29.1",
-        "next": "11.1.2",
+        "next": "^12.3.0",
         "next-compose-plugins": "^2.2.1",
         "next-seo": "^4.28.1",
         "next-transpile-modules": "^8.0.0",
@@ -42,7 +42,7 @@
     "devDependencies": {
         "@types/react": "17.0.27",
         "eslint": "8.0.0",
-        "eslint-config-next": "11.1.2",
+        "eslint-config-next": "^12.3.0",
         "typescript": "4.4.4",
         "webpack-merge": "^5.8.0"
     }

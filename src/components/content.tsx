@@ -137,6 +137,7 @@ const Content = () => {
                 }
                 <VStack
                     height="calc(100vh - 250px)"
+                    id="关于"
                 >
                     <Box flexGrow={1} alignSelf="stretch" pt="100px">
                         <H2 fontSize="16px" mb="15px">关于</H2>

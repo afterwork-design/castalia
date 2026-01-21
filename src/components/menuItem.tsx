@@ -8,11 +8,13 @@ import {useRef} from "react";
 interface Props {
     resource: Resource;
     active: boolean;
+    hideIcon?: boolean;
 }
 
 const MenuItem: React.FC<Props> = ({
     resource,
-    active
+    active,
+    hideIcon
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
 
@@ -27,7 +29,7 @@ const MenuItem: React.FC<Props> = ({
         <HStack
             alignItems="center"
             p="8px 20px"
-            columnGap="10px"
+            columnGap="2px"
             onClick={clickHandle}
             bgColor={active ? "#f1eeff" : "white"}
             cursor="pointer"
@@ -35,13 +37,15 @@ const MenuItem: React.FC<Props> = ({
                 bgColor: "#f1eeff55"
             }}
         >
-            <img
-                src={resource.icon}
-                height={20}
-                width={20}
-                alt={resource.name}
-                loading="lazy"
-            />
+            {!hideIcon && (
+                <img
+                    src={resource.icon}
+                    height={20}
+                    width={20}
+                    alt={resource.name}
+                    loading="lazy"
+                />
+            )}
             <H2
                 fontWeight="normal"
                 fontSize="14px"
