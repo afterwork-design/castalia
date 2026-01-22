@@ -14,20 +14,43 @@ const siderResource: Resource[] = [
     ...resource
 ];
 
+const aboutItem: Resource = {
+    name: "关于",
+    site: [],
+    icon: ""
+};
+
 const Sider = () => {
     const [activeResource, setActiveResource] = useState<Resource>(siderResource[0]);
 
     useEffect(() => {
         const handle = () => {
+            let closest: Resource | null = null;
+            let closestDistance = Infinity;
+
             for (let i = 0; i < siderResource.length; i++) {
                 const target = document.querySelector(`#${siderResource[i].name}`);
-                if (target && target.getBoundingClientRect().top >= 0) {
-                    setActiveResource(siderResource[i]);
-                    break;
+                if (target) {
+                    const rect = target.getBoundingClientRect();
+                    // 找到距离视口顶部最近的元素（在顶部以上）
+                    if (rect.top <= 100) {
+                        const distance = Math.abs(rect.top - 100);
+                        if (distance < closestDistance) {
+                            closestDistance = distance;
+                            closest = siderResource[i];
+                        }
+                    }
                 }
             }
+
+            if (closest) {
+                setActiveResource(closest);
+            }
         };
+
         window.addEventListener("scroll", handle);
+        // 初始执行一次
+        handle();
 
         return () => {
             window.removeEventListener("scroll", handle);
@@ -43,10 +66,11 @@ const Sider = () => {
             textAlign="center"
             paddingTop="50px"
             flexShrink={0}
-            display={["none", "inline-block", "inline-block", "inline-block", "inline-block"]}
+            display={["none", "flex", "flex", "flex", "flex"]}
             height="calc(100vh - 210px)"
+            flexDirection="column"
         >
-            <Box>
+            <Box flex="1" overflowY="auto">
                 {
                     siderResource.map((item) => (
                         <MenuItem
@@ -56,6 +80,14 @@ const Sider = () => {
                         />
                     ))
                 }
+            </Box>
+            <Box borderTop="1px solid #f0f0f0" pt="10px">
+                <MenuItem
+                    resource={aboutItem}
+                    key={aboutItem.name}
+                    active={activeResource.name === aboutItem.name}
+                    hideIcon={true}
+                />
             </Box>
         </RounderBox>
     );

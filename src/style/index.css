@@ -9,6 +9,7 @@
 html,body {
     --main-bg-color: #f8f8f8;
     background-color: var(--main-bg-color) !important;
+    scrollbar-gutter: stable;
 }
 
 body {

@@ -107,6 +107,7 @@ const Content = () => {
                         src="./add.svg"
                         w="22px"
                         cursor="pointer"
+                        alt="添加"
                         title="添加至我的"
                         onClick={() => setAddResourceModalOpen(true)}
                     />
@@ -114,6 +115,7 @@ const Content = () => {
                         src="./import.svg"
                         w="22px"
                         cursor="pointer"
+                        alt="导入"
                         title="导入"
                         onClick={importMyCollection}
                     />
@@ -121,6 +123,7 @@ const Content = () => {
                         src="./export.svg"
                         w="22px"
                         cursor="pointer"
+                        alt="导出"
                         title="导出"
                         onClick={exportMyCollectionToLocal}
                     />
@@ -137,6 +140,7 @@ const Content = () => {
                 }
                 <VStack
                     height="calc(100vh - 250px)"
+                    id="关于"
                 >
                     <Box flexGrow={1} alignSelf="stretch" pt="100px">
                         <H2 fontSize="16px" mb="15px">关于</H2>
@@ -148,13 +152,8 @@ const Content = () => {
                             <Text>
                                 Castalia 是 Afterwork 中的一个项目，想了解更多其他项目可以点击下方图片。
                             </Text>
-                            <Link
-                                href="https://afterwork-design.github.io"
-                            >
-                                <Image
-                                    src="./afterwork.png"
-                                    m="15px 0"
-                                />
+                            <Link href="https://afterwork-design.github.io">
+                                <Image src="./afterwork.png" alt="Afterwork 项目" m="15px 0" />
                             </Link>
                             <Text>
                                 <b>我的</b>面板中所有内容都是存储在浏览器本地的，所以更换电脑或者浏览器，并不会同步数据。
@@ -172,9 +171,9 @@ const Content = () => {
                     </Box>
                     <Text color="#999999" fontSize="16px">
                         <span>Designed by </span>
-                        <a href="https://tangweijuan.com" target="_blank">Tang Weijuan</a>
+                        <a href="https://tangweijuan.com" target="_blank" rel="noreferrer">Tang Weijuan</a>
                         <span> & Developed by </span>
-                        <a href="https://pengfeixc.com" target="_blank">Wang Pengfei</a>
+                        <a href="https://pengfeixc.com" target="_blank" rel="noreferrer">Wang Pengfei</a>
                     </Text>
                 </VStack>
             </VStack>

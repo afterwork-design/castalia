@@ -21,6 +21,7 @@ const ResourceCard: React.FC<Props> = ({
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
     const {setMyCollection} = useContext(MyCollectionContext);
+    const [isHovered, setIsHovered] = useState(false);
 
     const clickHandle = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const linkEle = linkRef.current;
@@ -95,10 +96,12 @@ const ResourceCard: React.FC<Props> = ({
             cursor="pointer"
             onClick={clickHandle}
             pos="relative"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
         >
             {
                 site.image ? (
-                    <Box flexShrink={0} w="60px">
+                    <Box flexShrink={0} w="40px">
                         <img
                             src={site.image}
                             alt={site.name}
@@ -129,6 +132,8 @@ const ResourceCard: React.FC<Props> = ({
                         right="10px"
                         top="10px"
                         onClick={(event) => event.stopPropagation()}
+                        opacity={isHovered ? 1 : 0}
+                        transition="opacity 0.2s"
                     >
                         <Checkbox
                             cursor="default"
