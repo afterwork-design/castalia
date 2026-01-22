@@ -66,9 +66,8 @@ const Sider = () => {
             textAlign="center"
             paddingTop="50px"
             flexShrink={0}
-            display={["none", "inline-block", "inline-block", "inline-block", "inline-block"]}
+            display={["none", "flex", "flex", "flex", "flex"]}
             height="calc(100vh - 210px)"
-            display="flex"
             flexDirection="column"
         >
             <Box flex="1" overflowY="auto">

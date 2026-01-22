@@ -43,7 +43,7 @@
         "@types/react": "17.0.27",
         "eslint": "8.0.0",
         "eslint-config-next": "^12.3.0",
-        "typescript": "4.4.4",
+        "typescript": "^4.9.5",
         "webpack-merge": "^5.8.0"
     }
 }
