@@ -55,13 +55,13 @@
                 "name": "Tabler Icons",
                 "description": "免费，可在线调节颜色、尺寸",
                 "url": "https://tablericons.com/",
-                "image": "https://tablericons.com/favicon.svg"
+                "image": "https://tablericons.com/favicon.png"
             },
             {
-                "name": "Emoji XD",
-                "description": "线上Emoji百科全书，支持关键词搜索",
-                "url": "https://emojixd.com",
-                "image": "./images/site/emojixd.jpg"
+                "name": "Emoji表情大全",
+                "description": "线上Emoji大全，支持关键词搜索",
+                "url": "https://emoji6.com/emojiall/",
+                "image": "https://emoji6.com/emojiall/favicon.ico"
             },
             {
                 "name": "seeklogo",
@@ -199,7 +199,7 @@
                 "name": "中国色",
                 "description": "中国传统色",
                 "url": "http://zhongguose.com",
-                "image": "./images/site/zhonguose.jpg"
+                "image": "https://zhongguose.com/favicon.svg"
             },
             {
                 "name": "Nippon Colors",
@@ -301,7 +301,7 @@
                 "name": "Unsplash",
                 "description": "免费，由世界各地创作者提供的高质量图片",
                 "url": "https://unsplash.com",
-                "image": "./images/site/unsplash.jpg"
+                "image": "https://unsplash.com/safari-pinned-tab.svg"
             },
             {
                 "name": "Pexels",
