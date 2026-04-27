@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">AII favicon light</title>
+  <desc id="desc">Favicon for light color scheme.</desc>
+  <text
+    x="50%"
+    y="56%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Inter, Poppins, Helvetica, Arial, sans-serif"
+    font-size="144"
+    font-weight="800"
+    letter-spacing="-8"
+    fill="#111827"
+  >AII</text>
+</svg>
