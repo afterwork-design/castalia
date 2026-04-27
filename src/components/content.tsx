@@ -101,8 +101,8 @@ const Content = () => {
             >
                 <Box
                     pos="absolute"
-                    right="10px"
-                    top="10px"
+                    right="0px"
+                    top="0px"
                     display="flex"
                     gap="8px"
                 >
