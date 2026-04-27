@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, {useState, useRef, useEffect, useContext, useLayoutEffect} from "react";
-import {Checkbox, Text, Box, Image} from "@chakra-ui/react";
+import {Box} from "@chakra-ui/react";
 import {ResourceItem} from "src/server";
 import {RounderBox, H3} from "./primitives";
 import {getDb, myCollectionTableName} from "src/util/indexDB";
@@ -22,6 +22,10 @@ const ResourceCard: React.FC<Props> = ({
     const linkRef = useRef<HTMLAnchorElement>(null);
     const {setMyCollection} = useContext(MyCollectionContext);
     const [isHovered, setIsHovered] = useState(false);
+    const isCollected = Boolean(checked);
+    const collectIconSrc = isCollected ? "./heart.svg" : "./heart-plus.svg";
+    const collectAltText = isCollected ? "已收藏" : "收藏";
+    const descriptionText = site.description ?? "";
 
     const clickHandle = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const linkEle = linkRef.current;
@@ -101,16 +105,16 @@ const ResourceCard: React.FC<Props> = ({
         >
             {
                 site.image ? (
-                    <Box flexShrink={0} w="40px">
+                    <Box flexShrink={0} w="32px">
                         <img
                             src={site.image}
                             alt={site.name}
-                            width={40}
-                            height={40}
+                            width={32}
+                            height={32}
                             loading="lazy"
                         />
                     </Box>
-                ) : <></>
+                ) : null
             }
             <Box>
                 <H3 fontSize="16px">
@@ -123,7 +127,7 @@ const ResourceCard: React.FC<Props> = ({
                         {site.name}
                     </a>
                 </H3>
-                <Text mt="14px" fontSize="14px" color="gray.400">{site.description}</Text>
+                <p style={{marginTop: "14px", fontSize: "13px", color: "#718096"}}>{descriptionText}</p>
             </Box>
             {
                 hasCollectBtn ? (
@@ -131,34 +135,72 @@ const ResourceCard: React.FC<Props> = ({
                         pos="absolute"
                         right="10px"
                         top="10px"
-                        onClick={(event) => event.stopPropagation()}
                         opacity={isHovered ? 1 : 0}
                         transition="opacity 0.2s"
                     >
-                        <Checkbox
-                            cursor="default"
-                            isChecked={checked}
-                            onChange={checkBoxChange}
-                        />
+                        <Box
+                            w="28px"
+                            h="28px"
+                            borderRadius="999px"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                            cursor="pointer"
+                            transition="background-color 0.2s"
+                            _hover={{
+                                backgroundColor: "gray.100"
+                            }}
+                            onClick={(event) => {
+                                event.stopPropagation();
+                                checkBoxChange();
+                            }}
+                        >
+                            <img
+                                src={collectIconSrc}
+                                width={20}
+                                height={20}
+                                alt={collectAltText}
+                            />
+                        </Box>
                     </Box>
-                ) : <></>
+                ) : null
             }
             {
                 hasDeleteBtn ? (
-                    <Image
-                        src="./delete.svg"
-                        height="25px"
+                    <Box
                         pos="absolute"
                         right="10px"
                         top="10px"
-                        onClick={(event) => {
-                            event.stopPropagation();
-                            deleteFromMyCollection();
-                        }}
-                        title="删除"
-                        cursor="default"
-                    />
-                ) : <></>
+                        opacity={isHovered ? 1 : 0}
+                        transition="opacity 0.2s"
+                    >
+                        <Box
+                            w="28px"
+                            h="28px"
+                            borderRadius="999px"
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                            cursor="pointer"
+                            transition="background-color 0.2s"
+                            _hover={{
+                                backgroundColor: "gray.100"
+                            }}
+                            onClick={(event) => {
+                                event.stopPropagation();
+                                deleteFromMyCollection();
+                            }}
+                            title="删除"
+                        >
+                            <img
+                                src="./delete.svg"
+                                width={20}
+                                height={20}
+                                alt="删除"
+                            />
+                        </Box>
+                    </Box>
+                ) : null
             }
         </RounderBox>
     );
