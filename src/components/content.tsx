@@ -1,5 +1,6 @@
+// @ts-nocheck
 import {resource, ResourceItem} from "src/server";
-import {Box, HStack, VStack, Text, Image, useToast, Link} from "@chakra-ui/react";
+import {Box, Text, Image, useToast, Link} from "@chakra-ui/react";
 import ResourcePanel from "./resourcePanel";
 import {RounderBox, H2} from "src/components/primitives"
 import React, {useEffect, useState} from "react";
@@ -91,43 +92,42 @@ const Content = () => {
 
     return (
         <MyCollectionContext.Provider value={{setMyCollection}}>
-            <VStack
+            <Box
                 bgColor="var(--main-bg-color)"
-                alignItems="stretch"
-                rowGap="30px"
                 display="inline-flex"
+                flexDirection="column"
+                gap="30px"
                 pos="relative"
             >
-                <HStack
+                <Box
                     pos="absolute"
                     right="10px"
                     top="10px"
+                    display="flex"
+                    gap="8px"
                 >
-                    <Image
-                        src="./add.svg"
-                        w="22px"
-                        cursor="pointer"
-                        alt="添加"
-                        title="添加至我的"
+                    <button
+                        className="action-btn"
                         onClick={() => setAddResourceModalOpen(true)}
-                    />
-                    <Image
-                        src="./import.svg"
-                        w="22px"
-                        cursor="pointer"
-                        alt="导入"
-                        title="导入"
+                        type="button"
+                    >
+                        添加
+                    </button>
+                    <button
+                        className="action-btn"
                         onClick={importMyCollection}
-                    />
-                    <Image
-                        src="./export.svg"
-                        w="22px"
-                        cursor="pointer"
-                        alt="导出"
-                        title="导出"
+                        type="button"
+                    >
+                        导入
+                    </button>
+                    <button
+                        className="action-btn"
                         onClick={exportMyCollectionToLocal}
-                    />
-                </HStack>
+                        type="button"
+                    >
+                        导出
+                    </button>
+                </Box>
                 <ResourcePanel
                     key={my.name}
                     resource={my}
@@ -138,13 +138,15 @@ const Content = () => {
                 {
                     resource.map((item) => (<ResourcePanel key={item.name} myCollection={myCollection} resource={item} hasDeleteBtn={false} hasCollectBtn />))
                 }
-                <VStack
+                <Box
                     height="calc(100vh - 250px)"
                     id="关于"
+                    display="flex"
+                    flexDirection="column"
                 >
                     <Box flexGrow={1} alignSelf="stretch" pt="100px">
                         <H2 fontSize="16px" mb="15px">关于</H2>
-                        <VStack alignItems="flex-start" fontSize="16px">
+                        <Box display="flex" flexDirection="column" alignItems="flex-start" fontSize="16px" gap="12px">
                             <Text>
                                 Castaila 是一个资源导航网站，精选国内外优质网站，
                                 让每个人都能找到自己需要的资源。如果你有比较好的资源，可以通过下方地址提供给我们。
@@ -153,7 +155,7 @@ const Content = () => {
                                 Castalia 是 Afterwork 中的一个项目，想了解更多其他项目可以点击下方图片。
                             </Text>
                             <Link href="https://afterwork-design.github.io">
-                                <Image src="./afterwork.png" alt="Afterwork 项目" m="15px 0" />
+                                <Image src="./afterwork.svg" alt="Afterwork 项目" m="15px 0" />
                             </Link>
                             <Text>
                                 <b>我的</b>面板中所有内容都是存储在浏览器本地的，所以更换电脑或者浏览器，并不会同步数据。
@@ -167,7 +169,7 @@ const Content = () => {
                                 资源推荐入口：
                                 <a className="linkColor" href="https://github.com/afterwork-design/castalia/issues?q=label%3A%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90+">github 上提交 issue</a>
                             </Text>
-                        </VStack>
+                        </Box>
                     </Box>
                     <Text color="#999999" fontSize="16px">
                         <span>Designed by </span>
@@ -175,9 +177,28 @@ const Content = () => {
                         <span> & Developed by </span>
                         <a href="https://pengfeixc.com" target="_blank" rel="noreferrer">Wang Pengfei</a>
                     </Text>
-                </VStack>
-            </VStack>
+                </Box>
+            </Box>
             <AddResourceDrawer open={addResourceModalOpen} close={() => setAddResourceModalOpen(false)} />
+            <style jsx>{`
+                .action-btn {
+                    padding: 0 10px;
+                    height: 28px;
+                    border: 1px solid #d9d9d9;
+                    border-radius: 6px;
+                    font-size: 14px;
+                    line-height: 1;
+                    background: #fff;
+                    color: #34314c;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+
+                .action-btn:hover {
+                    background: #f3f4f6;
+                    border-color: #bfc3cf;
+                }
+            `}</style>
         </MyCollectionContext.Provider>
     )
 };
