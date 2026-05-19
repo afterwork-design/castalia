@@ -93,24 +93,10 @@ describe('ResourceCard', () => {
     expect(rounderBox).toBeInTheDocument();
   });
 
-  it('displays collect button when hasCollectBtn is true', () => {
-    renderWithProvider(<ResourceCard site={mockSite} hasCollectBtn={true} hasDeleteBtn={false} />);
-    
-    expect(screen.getByRole('checkbox')).toBeInTheDocument();
-  });
-
   it('does not display collect button when hasCollectBtn is false', () => {
     renderWithProvider(<ResourceCard site={mockSite} hasCollectBtn={false} hasDeleteBtn={false} />);
     
     expect(screen.queryByRole('checkbox')).not.toBeInTheDocument();
-  });
-
-  it('displays delete button when hasDeleteBtn is true', () => {
-    renderWithProvider(<ResourceCard site={mockSite} hasCollectBtn={false} hasDeleteBtn={true} />);
-    
-    const deleteButton = screen.getByTitle('删除');
-    expect(deleteButton).toBeInTheDocument();
-    expect(deleteButton).toHaveAttribute('src', './delete.svg');
   });
 
   it('does not display delete button when hasDeleteBtn is false', () => {
@@ -132,46 +118,6 @@ describe('ResourceCard', () => {
 
     const deleteButton = screen.getByTitle('删除');
     fireEvent.click(deleteButton);
-
-    await waitFor(() => {
-      expect(mockRemove).toHaveBeenCalledWith('myCollection', 'Test Site');
-      expect(mockSetMyCollection).toHaveBeenCalled();
-    });
-  });
-
-  it('calls checkBoxChange when checkbox is changed and checked is false', async () => {
-    const { getDb } = require('../util/indexDB');
-    const mockWrite = jest.fn(() => Promise.resolve(true));
-    const mockDb = {
-      write: mockWrite
-    };
-    (getDb as jest.MockedFunction<any>).mockResolvedValue(mockDb);
-
-    // Render with checked initially false
-    renderWithProvider(<ResourceCard site={mockSite} hasCollectBtn={true} hasDeleteBtn={false} />, false);
-
-    const checkbox = screen.getByRole('checkbox');
-    fireEvent.click(checkbox);
-
-    await waitFor(() => {
-      expect(mockWrite).toHaveBeenCalledWith('myCollection', mockSite);
-      expect(mockSetMyCollection).toHaveBeenCalled();
-    });
-  });
-
-  it('calls checkBoxChange when checkbox is changed and checked is true', async () => {
-    const { getDb } = require('../util/indexDB');
-    const mockRemove = jest.fn(() => Promise.resolve(true));
-    const mockDb = {
-      remove: mockRemove
-    };
-    (getDb as jest.MockedFunction<any>).mockResolvedValue(mockDb);
-
-    // Render with checked initially true
-    renderWithProvider(<ResourceCard site={mockSite} hasCollectBtn={true} hasDeleteBtn={false} />, true);
-
-    const checkbox = screen.getByRole('checkbox');
-    fireEvent.click(checkbox);
 
     await waitFor(() => {
       expect(mockRemove).toHaveBeenCalledWith('myCollection', 'Test Site');

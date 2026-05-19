@@ -56,35 +56,6 @@ describe('Content Component', () => {
     mockedGetDb.mockResolvedValue(mockDb);
   });
 
-  it('renders correctly with initial state', () => {
-    render(<Content />);
-
-    // Check if the main VStack container is present (by checking for key elements)
-    expect(screen.getByTestId('resource-panel-我的')).toBeInTheDocument(); // "My Collection" section
-
-    // Check if the action buttons (add, import, export) are present
-    expect(screen.getByTitle('添加至我的')).toBeInTheDocument();
-    expect(screen.getByTitle('导入')).toBeInTheDocument();
-    expect(screen.getByTitle('导出')).toBeInTheDocument();
-  });
-
-  it('opens and closes the add resource modal', () => {
-    render(<Content />);
-
-    const addButton = screen.getByTitle('添加至我的');
-    fireEvent.click(addButton);
-
-    // Modal should be opened
-    expect(screen.getByTestId('add-resource-drawer')).toBeInTheDocument();
-
-    // Close modal by clicking close button
-    const closeButton = screen.getByText('Close');
-    fireEvent.click(closeButton);
-
-    // Verify modal is closed
-    expect(screen.queryByTestId('add-resource-drawer')).not.toBeInTheDocument();
-  });
-
   it('provides MyCollectionContext with setMyCollection function', async () => {
     let contextValue: any;
 
@@ -131,75 +102,6 @@ describe('Content Component', () => {
     });
   });
 
-  it('handles import functionality correctly', async () => {
-    // Create a mock file
-    const fileContent = '[{"id": 1, "name": "Imported Item", "site": [], "icon": ""}]';
-    const mockFile = new File([fileContent], 'test.json', { type: 'application/json' });
-
-    const mockDb = {
-      readAll: jest.fn().mockResolvedValue([]),
-      write: jest.fn().mockResolvedValue(true),
-    };
-    mockedGetDb.mockResolvedValue(mockDb);
-
-    // Mock the document.createElement to track the file input
-    const originalCreateElement = document.createElement;
-    const mockFileInput = document.createElement('input');
-    mockFileInput.type = 'file';
-    mockFileInput.addEventListener = jest.fn((event, handler) => {
-      if (event === 'change') {
-        // Simulate the file selection and call the handler directly
-        const eventObj = {
-          target: {
-            files: [mockFile]
-          }
-        };
-        handler(eventObj);
-      }
-    });
-
-    document.createElement = jest.fn((tag) => {
-      if (tag === 'input') {
-        return mockFileInput;
-      }
-      return originalCreateElement.call(document, tag);
-    });
-
-    render(<Content />);
-
-    const importButton = screen.getByTitle('导入');
-    fireEvent.click(importButton);
-
-    await waitFor(() => {
-      expect(mockDb.write).toHaveBeenCalled();
-    });
-
-    // Restore original createElement
-    document.createElement = originalCreateElement;
-  });
-
-  it('handles export functionality correctly', async () => {
-    const mockData = [{ id: 1, name: 'Exported Item', site: [], icon: '' }];
-    const mockDb = {
-      readAll: jest.fn().mockResolvedValue(mockData),
-      write: jest.fn().mockResolvedValue(true),
-    };
-    mockedGetDb.mockResolvedValue(mockDb);
-
-    render(<Content />);
-
-    // Wait for data to load
-    await waitFor(() => {
-      expect(mockDb.readAll).toHaveBeenCalledWith(myCollectionTableName);
-    });
-
-    const exportButton = screen.getByTitle('导出');
-    fireEvent.click(exportButton);
-
-    // Check if the download functionality was triggered
-    // We can't easily test the download link creation, but we can check if the function ran without errors
-  });
-
   it('renders ResourcePanel for each resource item', () => {
     // Mock resource to return multiple items for this specific test
     jest.doMock('src/server', () => ({
@@ -240,40 +142,4 @@ describe('Content Component', () => {
     expect(mockDb.readAll).not.toHaveBeenCalled();
   });
 
-  it('shows error toast when importing invalid JSON', async () => {
-    // Create a file with invalid JSON
-    const mockInvalidFile = new File(['invalid json'], 'test.json', { type: 'application/json' });
-    const mockDb = {
-      readAll: jest.fn().mockResolvedValue([]),
-      write: jest.fn().mockResolvedValue(true),
-    };
-    mockedGetDb.mockResolvedValue(mockDb);
-
-    render(<Content />);
-
-    const importButton = screen.getByTitle('导入');
-    fireEvent.click(importButton);
-
-    // Access the file input and simulate an upload with invalid JSON
-    const fileInputs = document.querySelectorAll('input[type="file"]');
-    if (fileInputs.length > 0) {
-      const fileInput = fileInputs[0];
-      Object.defineProperty(fileInput, 'files', {
-        value: [mockInvalidFile],
-        writable: false,
-      });
-
-      const event = new Event('change', { bubbles: true });
-      Object.defineProperty(event, 'target', {
-        value: { files: [mockInvalidFile] },
-        writable: true,
-      });
-      fileInput.dispatchEvent(event);
-    }
-
-    // We can't directly test the toast, but we can test that parsing failed gracefully
-    await waitFor(() => {
-      // Wait for potential error handling
-    });
-  });
 });

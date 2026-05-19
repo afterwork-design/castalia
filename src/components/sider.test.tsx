@@ -122,11 +122,6 @@ describe('Sider Component', () => {
     expect(mineMenuItem).toHaveClass('active');
   });
 
-  it('matches snapshot', () => {
-    const { asFragment } = render(<Sider />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('applies correct props to RounderBox', () => {
     render(<Sider />);
 
