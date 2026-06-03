@@ -128,6 +128,12 @@
                 "url": "https://lucide.dev/",
                 "description": "开源图标库，简约，一致，线性风格",
                 "image": "https://lucide.dev/logo.light.svg"
+            },
+            {
+                "name": "theSVG",
+                "description": "6000+ SVG 格式品牌 logo 库",
+                "url": "https://thesvg.org/",
+                "image": ""
             }
         ]
     },
@@ -296,24 +302,6 @@
                 "description": "网格渐变色编辑器",
                 "url": "https://colorflow.ls.graphics/",
                 "image": "https://colorflow.ls.graphics/assets/app-logo-kOjbjqmu.png"
-            },
-            {
-                "name": "Color Game",
-                "description": "How Well Can You Remember Colors? - Dialed\n记忆并重现颜色游戏",
-                "url": "https://dialed.gg/",
-                "image": ""
-            },
-            {
-                "name": "Contrast Ratio",
-                "description": "轻松计算色彩对比度，帮助通过WCAG",
-                "url": "https://contrast-ratio.com",
-                "image": "./images/site/contrast-ratio.jpg"
-            },
-            {
-                "name": "Color Palette Pro",
-                "url": "https://colorpalette.pro/",
-                "description": "UI 设计得很精致，且功能强大的调色板工具",
-                "image": ""
             }
         ]
     },
@@ -500,6 +488,12 @@
                 "description": "PDF 资源平台",
                 "url": "https://www.pdfdrive.com/",
                 "image": ""
+            },
+            {
+                "name": "My Secret Rainbow",
+                "url": "https://www.mysecretrainbow.com/",
+                "description": "设计师收集的文章",
+                "image": ""
             }
         ]
     },
@@ -580,18 +574,6 @@
                 "image": "https://www.gstatic.com/canvas/mixboard_favicon_32x32.png"
             },
             {
-                "name": "MockuPhone",
-                "description": "免费，在线生成纯白背景设备模型",
-                "url": "https://mockuphone.com",
-                "image": "https://mockuphone.com/images/favicon.png"
-            },
-            {
-                "name": "Mockups Design",
-                "description": "免费，优质模型下载",
-                "url": "https://mockups-design.com",
-                "image": "https://mockups-design-com.b-cdn.net/wp-content/uploads/2017/08/cropped-favicon-192x192.png"
-            },
-            {
                 "name": "Notebook Grid",
                 "url": "https://tangweijuan.github.io/notebook-grid/",
                 "description": "在线网格纸生成器",
@@ -634,10 +616,16 @@
                 "image": ""
             },
             {
+                "name": "Convert Case",
+                "url": "https://www.figma.com/community/plugin/1586284053789069409/convert-case",
+                "description": "Figma 插件，转换图层和文字格式，支持大小写、驼峰等常用格式",
+                "image": "./images/site/convert-case.svg"
+            },
+            {
                 "name": "Sugr素格",
                 "description": "像素艺术编辑器",
                 "url": "https://sugr.pages.dev/",
-                "image": ""
+                "image": "https://sugr.pages.dev/assets/icons/sugr-logo.svg"
             },
             {
                 "name": "TinyPNG",
@@ -668,6 +656,30 @@
                 "description": "可实时协作的专业UI设计工具",
                 "url": "https://js.design",
                 "image": "https://img.js.design/assets/webImg/favicon.ico"
+            },
+            {
+                "name": "Contrast Ratio",
+                "description": "轻松计算色彩对比度，帮助通过WCAG",
+                "url": "https://contrast-ratio.com",
+                "image": "./images/site/contrast-ratio.jpg"
+            },
+            {
+                "name": "Color Palette Pro",
+                "url": "https://colorpalette.pro/",
+                "description": "UI 设计得很精致，且功能强大的调色板工具",
+                "image": ""
+            },
+            {
+                "name": "Paint but...",
+                "url": "https://paintbut.netlify.app/",
+                "description": "在线水彩画晕染工具",
+                "image": ""
+            },
+            {
+                "name": "Tiny World Builder",
+                "url": "https://tinyworld.build/",
+                "description": "3D 小场景搭建工具",
+                "image": ""
             }
         ]
     },
@@ -686,12 +698,6 @@
                 "description": "在线代码编辑器和学习环境，包含许多 Web 设计相关资源",
                 "url": "https://codepen.io",
                 "image": "https://cpwebassets.codepen.io/assets/favicon/favicon-touch-de50acbf5d634ec6791894eba4ba9cf490f709b3d742597c6fc4b734e6492a5a.png"
-            },
-            {
-                "name": "Convert Case",
-                "url": "https://www.figma.com/community/plugin/1586284053789069409/convert-case",
-                "description": "Figma 插件，转换图层和文字格式，支持大小写、驼峰等常用格式",
-                "image": "./images/site/convert-case.svg"
             },
             {
                 "name": "CSS Loaders",
@@ -740,12 +746,6 @@
                 "description": "UI/UX 设计资源",
                 "url": "https://calltoinspiration.com/",
                 "image": "https://calltoinspiration.com/favicon.ico"
-            },
-            {
-                "name": "Chromatic",
-                "url": "https://feyder.co/projects/chromatic/",
-                "description": "色块拼图游戏",
-                "image": "https://feyder.co/projects/chromatic/favicon.png"
             },
             {
                 "name": "Comsmos",
@@ -806,6 +806,60 @@
                 "description": "UI、插画、运营、字体、标志、截屏、灵感集",
                 "url": "https://www.meiye.art/",
                 "image": "./images/site/meiye.svg"
+            },
+            {
+                "name": "MockuPhone",
+                "description": "免费，在线生成纯白背景设备模型",
+                "url": "https://mockuphone.com",
+                "image": "https://mockuphone.com/images/favicon.png"
+            },
+            {
+                "name": "Mockups Design",
+                "description": "免费，优质模型下载",
+                "url": "https://mockups-design.com",
+                "image": "https://mockups-design-com.b-cdn.net/wp-content/uploads/2017/08/cropped-favicon-192x192.png"
+            },
+            {
+                "name": "Curated Supply",
+                "url": "https://www.curated.supply/",
+                "description": "工业产品精选集",
+                "image": ""
+            },
+            {
+                "name": "Roam",
+                "url": "https://roam.neesh.page/",
+                "description": "精美工业产品展示站",
+                "image": ""
+            },
+            {
+                "name": "Infinite Mac",
+                "url": "https://infinitemac.org/",
+                "description": "1984~2026年的苹果系统展示集",
+                "image": ""
+            },
+            {
+                "name": "Neal.fun",
+                "url": "https://neal.fun/",
+                "description": "Neal 创建的各种趣味网站",
+                "image": ""
+            },
+            {
+                "name": "UI SKILLS",
+                "url": "https://www.ui-skills.com/",
+                "description": "109 个高质量 skills",
+                "image": ""
+            },
+            {
+                "name": "Web Designer News",
+                "url": "https://webdesignernews.com/",
+                "description": "网页设计开发精选资讯",
+                "image": ""
+            },
+            {
+                "name": "Your Name in Landsat",
+                "url": "https://science.nasa.gov/specials/your-name-in-landsat/",
+                "description": "输入名字，找到对应的陆地卫星图像",
+                "image": ""
             }
         ]
     },
@@ -944,6 +998,36 @@
                 "url": "https:///notes.art",
                 "description": "Chris Silverman 从 2021 年开始，每天发布一张在 iPhone Notes 里画的画",
                 "image": "./images/site/notes-art.png"
+            },
+            {
+                "name": "Ky Decker",
+                "url": "https://ky.fyi/",
+                "description": "Design engineer",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "name": "游戏",
+        "icon": "./images/menu/game.svg",
+        "site": [
+            {
+                "name": "Color Game",
+                "description": "How Well Can You Remember Colors? - Dialed\n记忆并重现颜色游戏",
+                "url": "https://dialed.gg/",
+                "image": ""
+            },
+            {
+                "name": "Chromatic",
+                "url": "https://feyder.co/projects/chromatic/",
+                "description": "色块拼图游戏",
+                "image": "https://feyder.co/projects/chromatic/favicon.png"
+            },
+            {
+                "name": "Tinto",
+                "url": "https://tinto.rafaelbombana.com/",
+                "description": "色彩记忆游戏",
+                "image": ""
             }
         ]
     },
@@ -973,7 +1057,7 @@
                 "name": "fontofthe.day",
                 "description": "每日推荐优秀英文字体",
                 "url": "https://fontofthe.day/",
-                "image": "https://www.google.com/s2/favicons?domain=fontofthe.day&sz=32"
+                "image": "./images/site/fontoftheday.svg"
             },
             {
                 "name": "字体搬运工",
@@ -992,6 +1076,12 @@
                 "description": "Brutalita is an experimental font and editor.",
                 "url": "https://brutalita.com/",
                 "image": "https://www.google.com/s2/favicons?domain=brutalita.com&sz=32"
+            },
+            {
+                "name": "字库星球",
+                "url": "https://www.zikuxq.com/font-list",
+                "description": "免费可商用字体在线平台",
+                "image": ""
             }
         ]
     },
