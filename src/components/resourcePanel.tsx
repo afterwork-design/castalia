@@ -53,6 +53,7 @@ const ResourcePanel: React.FC<PropsWithChildren<Props>> = ({
                             site={site}
                             hasDeleteBtn={hasDeleteBtn}
                             hasCollectBtn={hasCollectBtn}
+                            siteCategory={resource.name}
                             checked={myCollection.findIndex((item) => item.name === site.name) !== -1}
                         />
                     ))

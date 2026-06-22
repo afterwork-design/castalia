@@ -10,6 +10,7 @@ interface Props {
     site: ResourceItem;
     hasCollectBtn: boolean;
     hasDeleteBtn: boolean;
+    siteCategory?: string;
     checked?: boolean;
 }
 
@@ -17,6 +18,7 @@ const ResourceCard: React.FC<Props> = ({
     site,
     hasCollectBtn,
     hasDeleteBtn,
+    siteCategory,
     checked
 }) => {
     const linkRef = useRef<HTMLAnchorElement>(null);
@@ -26,6 +28,7 @@ const ResourceCard: React.FC<Props> = ({
     const collectIconSrc = isCollected ? "./heart.svg" : "./heart-plus.svg";
     const collectAltText = isCollected ? "已收藏" : "收藏";
     const descriptionText = site.description ?? "";
+    const category = site.category ?? siteCategory;
 
     const clickHandle = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const linkEle = linkRef.current;
@@ -37,10 +40,10 @@ const ResourceCard: React.FC<Props> = ({
     const checkBoxChange = () => {
         getDb().then((db) => {
             if (!checked) {
-                db.write(myCollectionTableName, site).then((res) => {
+                db.write(myCollectionTableName, { ...site, category }).then((res) => {
                     if (res) {
                         console.log("添加成功");
-                        setMyCollection((collection) => ([...collection, site]));
+                        setMyCollection((collection) => ([...collection, { ...site, category }]));
                     } else {
                         console.log("添加失败");
                     }
@@ -116,7 +119,7 @@ const ResourceCard: React.FC<Props> = ({
                     </Box>
                 ) : null
             }
-            <Box>
+            <Box display="flex" flexDirection="column" flex="1" minW="0" pb={hasDeleteBtn && category ? "26px" : undefined}>
                 <H3 fontSize="16px">
                     <a
                         ref={linkRef}
@@ -135,7 +138,7 @@ const ResourceCard: React.FC<Props> = ({
                         pos="absolute"
                         right="10px"
                         top="10px"
-                        opacity={isHovered ? 1 : 0}
+                        opacity={isCollected ? 1 : (isHovered ? 1 : 0)}
                         transition="opacity 0.2s"
                     >
                         <Box
@@ -199,6 +202,28 @@ const ResourceCard: React.FC<Props> = ({
                                 alt="删除"
                             />
                         </Box>
+                    </Box>
+                ) : null
+            }
+            {
+                hasDeleteBtn && category ? (
+                    <Box
+                        pos="absolute"
+                        right="10px"
+                        bottom="8px"
+                        fontSize="12px"
+                        color="#718096"
+                        bgColor="rgba(243, 244, 246, 0.85)"
+                        borderRadius="4px"
+                        px="6px"
+                        py="2px"
+                        lineHeight="1.2"
+                        maxW="calc(100% - 30px)"
+                        overflow="hidden"
+                        textOverflow="ellipsis"
+                        whiteSpace="nowrap"
+                    >
+                        {category}
                     </Box>
                 ) : null
             }
