@@ -55,7 +55,7 @@
                 "name": "A11Y Collective",
                 "description": "无障碍网页设计学习平台",
                 "url": "https://www.a11y-collective.com/blog/",
-                "image": "https://www.a11y-collective.com/favicon.ico"
+                "image": "./images/site/a11y.png"
             },
             {
                 "name": "Access * Ability",
@@ -79,7 +79,7 @@
                 "name": "People and Blogs",
                 "description": "A weekly newsletter series where interesting people talk about themselves and their blogs",
                 "url": "https://peopleandblogs.com/",
-                "image": "./images/site/"
+                "image": "./images/site/people-and-blog.png"
             },
             {
                 "name": "Project Gutenberg",
@@ -104,12 +104,6 @@
                 "description": "PDF 资源平台",
                 "url": "https://www.pdfdrive.com/",
                 "image": "./images/site/pdf-drive.ico"
-            },
-            {
-                "name": "My Secret Rainbow",
-                "url": "https://www.mysecretrainbow.com/",
-                "description": "设计师收集的文章",
-                "image": "https://www.mysecretrainbow.com/favicon.ico"
             },
             {
                 "name": "AI Design Field Guide",
@@ -175,7 +169,7 @@
                 "name": "EZ-Tree",
                 "description": "程序化3D树木生成器",
                 "url": "https://www.eztree.dev/",
-                "image": "./images/site/ez-tree.ico"
+                "image": "./images/site/eztree.png"
             },
             {
                 "name": "FabPic",
@@ -229,7 +223,7 @@
                 "name": "Pool Things",
                 "description": "生成可爱图标的在线工具",
                 "url": "https://things.pool.day/",
-                "image": "./images/site/pool-things.ico"
+                "image": "./images/site/pool-things.png"
             },
             {
                 "name": "Screen Guru",
@@ -247,7 +241,7 @@
                 "name": "SPACE TYPE GENERATOR",
                 "description": "在线文字动画排版工具",
                 "url": "https://spacetypegenerator.com/",
-                "image": "https://spacetypegenerator.com/favicon.ico"
+                "image": ""
             },
             {
                 "name": "Convert Case",
@@ -301,13 +295,13 @@
                 "name": "Color Palette Pro",
                 "url": "https://colorpalette.pro/",
                 "description": "UI 设计得很精致，且功能强大的调色板工具",
-                "image": "https://colorpalette.pro/favicon.ico"
+                "image": "./images/site/colorpalette.png"
             },
             {
                 "name": "Paint but...",
                 "url": "https://paintbut.netlify.app/",
                 "description": "在线水彩画晕染工具",
-                "image": "https://paintbut.netlify.app/favicon.ico"
+                "image": "./images/site/paint-but.png"
             },
             {
                 "name": "Tiny World Builder",
@@ -541,13 +535,13 @@
                 "name": "野果子",
                 "url": "https://www.yeguozi.com/",
                 "description": "从电影里，找家的配色与灵感",
-                "image": "./images/site/f4fe979586.svg"
+                "image": "./images/site/yeguozi.svg"
             },
             {
                 "name": "国家标准",
                 "url": "https://openstd.samr.gov.cn/bzgk//std/",
                 "description": "国标文件收录系统",
-                "image": "https://openstd.samr.gov.cn/favicon.ico"
+                "image": "./images/site/sac.png"
             }
         ]
     },
