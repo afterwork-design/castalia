@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="124 108 382 308" role="img" aria-label="野果子 Yeguozi">
+  <g transform="translate(72 78) scale(1.35)">
+    <path d="M48 167 C60 78 145 35 229 73 C286 99 312 157 279 198 C244 242 151 232 85 197 C58 183 45 177 48 167 Z" fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"/>
+    <path d="M91 164 C124 124 182 108 239 132" fill="none" stroke="#E0C28A" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" opacity=".62"/>
+    <path d="M115 77 L97 49" fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <path d="M154 63 L148 33" fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <path d="M195 68 L205 40" fill="none" stroke="#C9A96E" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <circle cx="244" cy="96" r="4.2" fill="#E0C28A" opacity="0.9"/>
+    <circle cx="268" cy="134" r="3.6" fill="#E0C28A" opacity="0.9"/>
+    <circle cx="78" cy="158" r="4.8" fill="#C9A96E"/>
+  </g>
+</svg>
