@@ -190,6 +190,12 @@
                 "image": "./images/site/imagestool.png"
             },
             {
+                "name": "Kite",
+                "description": "AI 设计工具：Claude、ChatGPT、Cursor、Codex 等 AI 代理通过 MCP 与团队在同一文件中绘制可编辑图层，可复制到 Figma 或导出 HTML/React/Tailwind",
+                "url": "https://kite.new/",
+                "image": "https://kite.new/apple-icon.png"
+            },
+            {
                 "name": "Magic Eraser",
                 "description": "快速消除图片中杂物的在线工具",
                 "url": "https://www.magiceraser.io/",
