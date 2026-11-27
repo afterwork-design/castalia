@@ -326,6 +326,12 @@
                 "url": "https://typeincube.com/",
                 "description": "把字母文本排列在立方体网格里",
                 "image": "./images/site/cube-type.png"
+            },
+            {
+                "name": "StagePeek",
+                "description": "免费免登录交互式 2D/3D 演唱会选座视野模拟器，覆盖 201+ 全球体育馆与演艺场馆及手机变焦实景取景预览",
+                "url": "https://stagepeek.live",
+                "image": "https://stagepeek.live/favicon.ico"
             }
         ]
     },
