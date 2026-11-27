@@ -154,6 +154,30 @@
                 "image": "https://static.canva.cn/domain-assets/canva/static/images/favicon-1.ico"
             },
             {
+                "name": "Color Palette Pro",
+                "url": "https://colorpalette.pro/",
+                "description": "UI 设计得很精致，且功能强大的调色板工具",
+                "image": "./images/site/colorpalette.png"
+            },
+            {
+                "name": "Contrast Ratio",
+                "description": "轻松计算色彩对比度，帮助通过WCAG",
+                "url": "https://contrast-ratio.com",
+                "image": "./images/site/contrast-ratio.jpg"
+            },
+            {
+                "name": "Convert Case",
+                "url": "https://www.figma.com/community/plugin/1586284053789069409/convert-case",
+                "description": "Figma 插件，转换图层和文字格式，支持大小写、驼峰等常用格式",
+                "image": "./images/site/convert-case.svg"
+            },
+            {
+                "name": "CUBE Type",
+                "url": "https://typeincube.com/",
+                "description": "把字母文本排列在立方体网格里",
+                "image": "./images/site/cube-type.png"
+            },
+            {
                 "name": "docsmall",
                 "description": "在线免费图片、PDF压缩工具",
                 "url": "https://docsmall.com",
@@ -208,6 +232,18 @@
                 "image": "https://tangweijuan.github.io/notebook-grid/favicon.svg"
             },
             {
+                "name": "Online 3D Viewer",
+                "url": "https://3dviewer.net/",
+                "description": "在线 3D 模型查看器",
+                "image": "./images/site/online-3d-viewer.ico"
+            },
+            {
+                "name": "Paint but...",
+                "url": "https://paintbut.netlify.app/",
+                "description": "在线水彩画晕染工具",
+                "image": "./images/site/paint-but.png"
+            },
+            {
                 "name": "Pixel Motion",
                 "description": "像素画在线工具",
                 "url": "https://pixel-motion.yysuni.com/",
@@ -244,16 +280,28 @@
                 "image": ""
             },
             {
-                "name": "Convert Case",
-                "url": "https://www.figma.com/community/plugin/1586284053789069409/convert-case",
-                "description": "Figma 插件，转换图层和文字格式，支持大小写、驼峰等常用格式",
-                "image": "./images/site/convert-case.svg"
+                "name": "StagePeek",
+                "description": "免费免登录交互式 2D/3D 演唱会选座视野模拟器，覆盖 201+ 全球体育馆与演艺场馆及手机变焦实景取景预览",
+                "url": "https://stagepeek.live",
+                "image": "https://stagepeek.live/favicon.ico"
             },
             {
                 "name": "Sugr素格",
                 "description": "像素艺术编辑器",
                 "url": "https://sugr.pages.dev/",
                 "image": "https://sugr.pages.dev/assets/icons/sugr-logo.svg"
+            },
+            {
+                "name": "Textures",
+                "url": "https://texture.fayaz.workers.dev/",
+                "description": "给图片添加纹理滤镜",
+                "image": "https://texture.fayaz.workers.dev/favicon.ico"
+            },
+            {
+                "name": "Tiny World Builder",
+                "url": "https://tinyworld.build/",
+                "description": "3D 小场景搭建工具",
+                "image": "./images/site/tiny-world-builder.png"
             },
             {
                 "name": "TinyPNG",
@@ -284,48 +332,6 @@
                 "description": "可实时协作的专业UI设计工具",
                 "url": "https://js.design",
                 "image": "./images/site/jishi-sheji.png"
-            },
-            {
-                "name": "Contrast Ratio",
-                "description": "轻松计算色彩对比度，帮助通过WCAG",
-                "url": "https://contrast-ratio.com",
-                "image": "./images/site/contrast-ratio.jpg"
-            },
-            {
-                "name": "Color Palette Pro",
-                "url": "https://colorpalette.pro/",
-                "description": "UI 设计得很精致，且功能强大的调色板工具",
-                "image": "./images/site/colorpalette.png"
-            },
-            {
-                "name": "Paint but...",
-                "url": "https://paintbut.netlify.app/",
-                "description": "在线水彩画晕染工具",
-                "image": "./images/site/paint-but.png"
-            },
-            {
-                "name": "Tiny World Builder",
-                "url": "https://tinyworld.build/",
-                "description": "3D 小场景搭建工具",
-                "image": "./images/site/tiny-world-builder.png"
-            },
-            {
-                "name": "Online 3D Viewer",
-                "url": "https://3dviewer.net/",
-                "description": "在线 3D 模型查看器",
-                "image": "./images/site/online-3d-viewer.ico"
-            },
-            {
-                "name": "Textures",
-                "url": "https://texture.fayaz.workers.dev/",
-                "description": "给图片添加纹理滤镜",
-                "image": "https://texture.fayaz.workers.dev/favicon.ico"
-            },
-            {
-                "name": "CUBE Type",
-                "url": "https://typeincube.com/",
-                "description": "把字母文本排列在立方体网格里",
-                "image": "./images/site/cube-type.png"
             }
         ]
     },
